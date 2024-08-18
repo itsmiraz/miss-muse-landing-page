@@ -1,10 +1,14 @@
+import Hero from "./components/home/hero";
+import Header from "./components/ui/header";
 
 function App() {
 
   return (
-    <>
-      <h1>Hello World</h1>
-    </>
+    <main className="max-w-[1527px] transition-all ease-in-out duration-300 mx-auto">
+      <Header />
+
+      <Hero />
+    </main>
   )
 }
 

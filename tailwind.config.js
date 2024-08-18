@@ -4,7 +4,7 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        sans: ["Figtree", "sans-serif"],
+        sans: ["Plus Jakarta Sans", "sans-serif"],
         jakarta: ["Plus Jakarta Sans", "sans-serif"],
         viga: ["Viga", "sans-serif"],
       },
