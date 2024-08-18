@@ -2,10 +2,12 @@ import logo from '../../assets/images/logo.png'
 import PinkGradient from '../../assets/gradients/PinkGradient.png'
 import BlueGradient from '../../assets/gradients/BlueGradient.png'
 
+
+
 const Hero = () => {
     return (
         <div className="overflow-hidden bg-gradient-to-r pt-40 pb-40 from-[#1C062F] to-[#0B0113] flex justify-center items-center relative">
-            <div className='flex relative z-20 flex-col justify-center items-center'>
+            <div className='flex relative z-30 flex-col justify-center items-center'>
                 <div>
                     <img className='max-w-[165px] mx-auto' src={logo} alt='hero-logo' />
                 </div>
@@ -22,11 +24,14 @@ const Hero = () => {
                 </div>
 
             </div>
-            <div className='absolute -top-[169px] -left-[213px] opacity-25'>
+            <div className='absolute z-10 -top-[169px] -left-[213px] opacity-25'>
                 <img src={PinkGradient} className='max-w-[1102px]' alt="" />
             </div>
-            <div className='absolute -bottom-[169px] -right-[213px] opacity-25'>
+            <div className='absolute z-10 -bottom-[169px] -right-[213px] opacity-25'>
                 <img src={BlueGradient} className='max-w-[1102px]' alt="" />
+            </div>
+            <div className=' absolute z-20 bottom-0 left-0 h-[365px] w-full bg-gradient-to-t to-[#000000]/0 from-[#000000]'>
+
             </div>
 
         </div>
