@@ -148,3 +148,32 @@ export const Training_steps = [
 ]
 
 
+
+
+import BagEyeIcon from '../assets/icons/BagEye.svg'
+import DiscountIcon from '../assets/icons/Discount.svg'
+import Cirtificate from '../assets/icons/Cirtificate.svg'
+import Girl from '../assets/icons/Girl.svg'
+
+export const Receive_Section_data = [
+    {
+        icon: <BagEyeIcon />,
+        title: 'Kit complet de cils',
+        desc: "Le  kit comprend une gamme complète d'outils pour l'application et l'amélioration des cils."
+    },
+    {
+        icon: <Cirtificate />,
+        title: 'Deux certifications',
+        desc: "Vous recevrez une certification pour les poses de cils et le rehaussement avec teinture."
+    },
+    {
+        icon: <DiscountIcon />,
+        title: 'Rabais Miss Muse',
+        desc: "Vous aurez accès à des Rabais de 10% pour les produits de Miss Muse."
+    },
+    {
+        icon: <Girl />,
+        title: 'Soutiens et mentorat',
+        desc: "Vous pourrez obtenir des conseils pour attirer et fidéliser la clientèle après vos certifications."
+    },
+]

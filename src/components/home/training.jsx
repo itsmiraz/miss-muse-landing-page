@@ -8,9 +8,9 @@ import Step3 from '../../assets/icons/Step3.svg'
 
 const Training = () => {
     return (
-        <div className="bg-gradient-to-t to-[#0B1629] via-[#22091B] from-[#011C11] ">
+        <div className="relative bg-gradient-to-t to-[#0B1629] via-[#22091B] from-[#011C11] ">
             <h2 className="text-[49px] font-bold text-center pt-[37px]">Déroulement du training</h2>
-            <div className="flex  items-center justify-center gap-x-[110px]">
+            <div className="flex relative z-30  items-center justify-center gap-x-[110px]">
                 <div className="relative ">
                     <DashedLine />
 
@@ -80,7 +80,9 @@ const Training = () => {
                     }
                 </div>
             </div>
+            {/* <div className='opacity-40 absolute z-20 bottom-0 left-0 h-[365px] w-full bg-gradient-to-t to-[#000000]/0 from-[#000000]'>
 
+            </div> */}
         </div>
     )
 }
