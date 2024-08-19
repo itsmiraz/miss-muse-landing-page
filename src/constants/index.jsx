@@ -49,3 +49,102 @@ export const Expertise_content = [
         desc: "Bénéficiez d'un suivi continu avec Miss Muse pendant un an après votre formation",
     },
 ]
+
+
+import BookIcon from '../assets/icons/Book.svg'
+import PlainEye from '../assets/icons/PlainEye.svg'
+import SchoolIcon from '../assets/icons/School.svg'
+
+export const Training_steps = [
+    {
+        header: {
+            icon: <BookIcon />,
+            head_title: 'théorie',
+            bg_gradient: {
+                color1: '#2787F1',
+                color2: '#A881FF',
+
+            }
+        },
+        desc: {
+            border_gradient: {
+                color1: '#F9A1FB',
+                color2: '#6826E3',
+                color3: '#7886FF'
+            },
+            bg_gradient: {
+                color1: '#223D92',
+                color2: '#43155B',
+            },
+            steps: [
+
+                `Théorie approfondie`,
+                `Préparation et application`,
+                `Soin des cils`,
+                `Théorie de l'adhésif`,
+                `Pratique sur mannequin  <br/> <span class='font-[400]'>(Classique, Hybride)</span>`,
+                `Pratique des bouquets de cils`
+            ]
+        }
+    },
+    {
+        header: {
+            icon: <PlainEye />,
+            head_title: 'exercice',
+            bg_gradient: {
+                color1: '#E51F96',
+                color2: '#851B8E',
+
+            },
+        },
+        desc: {
+            border_gradient: {
+                color1: '#B3A4FF',
+                color2: '#26E3E3',
+                color3: '#EF78FF'
+            },
+            bg_gradient: {
+                color1: '#7E1358',
+                color2: '#4E1652',
+            },
+            steps: [
+                `Pratique sur modèle réelle  <br/> <span class='font-[400]'>(application d'un set volume léger)</span>`,
+                `Discussion des défis courants et 
+                solutions pendant l'application`,
+                `Évaluation et retour détaillé sur la performance`,
+                `Conseils personnalisés`
+            ]
+        }
+    },
+    {
+        header: {
+            icon: <SchoolIcon />,
+            head_title: 'Avancé',
+            bg_gradient: {
+                color1: '#00B662',
+                color2: '#00665C',
+
+            },
+        },
+        desc: {
+            border_gradient: {
+                color1: '#A2D9ED',
+                color2: '#A2FFAF',
+                color3: '#84AEED'
+            },
+            bg_gradient: {
+                color1: '#02663B',
+                color2: '#0A7666',
+            },
+            steps: [
+
+                `Astuces pour attirer de nouveaux clients`,
+                `Conseils pour démarrer ton entreprise`,
+                `Pratique sur modèle (lash lift + tint)`,
+                `Séances photos pro avec certificats`
+            ]
+        },
+    }
+]
+
+
