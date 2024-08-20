@@ -4,6 +4,7 @@ import Hero from "./components/home/hero";
 import Receive from "./components/home/recieve";
 import StartNow from "./components/home/startNow";
 import Training from "./components/home/training";
+import Footer from "./components/ui/footer";
 import Header from "./components/ui/header";
 
 function App() {
@@ -18,6 +19,7 @@ function App() {
       <Receive />
       <StartNow />
       <About />
+      <Footer />
     </main>
   )
 }
