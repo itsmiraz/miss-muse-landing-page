@@ -1,3 +1,4 @@
+import About from "./components/home/about";
 import Expertise from "./components/home/expertise";
 import Hero from "./components/home/hero";
 import Receive from "./components/home/recieve";
@@ -16,6 +17,7 @@ function App() {
       <Training />
       <Receive />
       <StartNow />
+      <About />
     </main>
   )
 }
