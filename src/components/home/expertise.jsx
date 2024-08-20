@@ -13,20 +13,27 @@ const Expertise = () => {
                 </h2>
 
                 <div className=' flex justify-center items-center gap-x-[34px] '>
-                    {Expertise_content.map((item, i) => <div className={`${i === 1 && 'mt-[40px]'} p-[1px] max-w-[400px] justify-center items-center flex h-[250px] rounded-[12px] overflow-hidden`}
-                        style={{
-                            backgroundImage: `linear-gradient(to right, ${item.from}, ${item.to})`,
-                        }}
-                        key={i}>
-                        <div className={`py-[36px] px-3 z-20 flex justify-center flex-col items-center w-full h-full gap-4  rounded-[12px] bg-gray-900`}>
-                            <div>
-                                {item.icon}
+                    {Expertise_content.map((item, i) => (
+                        <div
+                            className={`${i === 1 ? 'mt-[40px]' : ''} w-[400px] flex justify-center items-center h-[250px]`}
+                            key={i}
+                        >
+                            <div
+                                className="relative w-full h-full rounded-[12px] p-[2px] overflow-hidden"
+                                style={{
+                                    background: `linear-gradient(to right, ${item.from}, ${item.to})`,
+                                }}
+                            >
+                                <div className="w-full px-6 h-full bg-gray-900 rounded-[12px] flex justify-center items-center flex-col gap-4">
+                                    <div>{item.icon}</div>
+                                    <p className="text-[24px] font-bold text-center">
+                                        {item.desc}
+                                    </p>
+                                </div>
                             </div>
-                            <p className='text-[24px] font-bold text-center'>
-                                {item.desc}
-                            </p>
                         </div>
-                    </div>)}
+                    )
+                    )}
                 </div>
             </div>
             <div className='absolute -left-[790px] top-1/2 transform -translate-y-1/2'>
