@@ -14,12 +14,12 @@ function App() {
       <Header />
 
       <Hero />
-      <Expertise />
-      <Training />
+       <Expertise />
+      {/*<Training />
       <Receive />
       <StartNow />
       <About />
-      <Footer />
+      <Footer /> */}
     </main>
   )
 }

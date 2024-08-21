@@ -5,25 +5,25 @@ import { Expertise_content } from '../../constants'
 
 const Expertise = () => {
     return (
-        <div className="pt-5 bg-[#060C16] relative pb-[174px] ">
+        <div className="pt-5 md:bg-[#060C16] relative pb-[174px] ">
             <div className='z-20 relative'>
 
-                <h2 className="text-center pb-16 text-[48px] font-bold">
+                <h2 className="text-center pb-[23px] md:pb-16 text-[24px] md:text-[48px] font-bold">
                     À quoi s’attendre
                 </h2>
 
-                <div className=' flex justify-center items-center gap-x-[34px] '>
+                <div className=' flex flex-wrap justify-center items-center gap-x-[9px] gap-y-[9px] md:gap-x-[34px] '>
                     {Expertise_content.map((item, i) => (
                      <div
-                     className={`${i === 1 ? 'mt-[40px]' : ''} glow-effect w-[400px] flex justify-center items-center h-[250px]`}
+                     className={`${i === 1 ? 'mt-0 md:mt-[40px]' : ''} glow-effect w-[182px] md:w-[400px] flex justify-center items-center h-[116px] md:h-[250px]`}
                      key={i}
                    >
                      <div
                        className={`${item.css} relative w-full h-full rounded-[12px] p-[2px] overflow-hidden`}
                      >
-                       <div className="w-full px-6 h-full bg-gray-900 rounded-[12px] flex justify-center items-center flex-col gap-4">
-                         <div>{item.icon}</div>
-                         <p className="text-[24px] font-bold text-center">
+                       <div className="w-full px-[8px] md:px-6 h-full bg-gray-900 rounded-[12px] flex justify-center items-center flex-col gap-2 md:gap-4">
+                         <div className={`md:w-[${item.iconSize.md.w}] w-[${item.iconSize.sm.w}] md:h-[${item.iconSize.md.h}] h-[${item.iconSize.sm.h}]`}>{item.icon}</div>
+                         <p className="text-[12px] md:text-[24px] font-bold text-center">
                            {item.desc}
                          </p>
                        </div>
