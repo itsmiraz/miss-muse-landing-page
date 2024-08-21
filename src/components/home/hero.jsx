@@ -63,7 +63,7 @@ const Hero = () => {
  
 
   return (
-    <div className="overflow-hidden  pt-40 pb-40 md:bg-gradient-to-r from-[#1C062F] to-[#0B0113] flex justify-center items-center relative">
+    <div className="overflow-hidden pt-10 md:pt-40 pb-10 md:pb-40 md:bg-gradient-to-r from-[#1C062F] to-[#0B0113] flex justify-center items-center relative">
       <div className="flex relative z-30 flex-col justify-center items-center">
         <div>
           <img className="max-w-[165px] mx-auto" src={logo} alt="hero-logo" />

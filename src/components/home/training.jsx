@@ -11,7 +11,7 @@ import { motion, } from 'framer-motion';
 const Training = () => {
 
     return (
-        <div className="relative bg-gradient-to-t to-[#060C16] via-[#22091B] from-[#011C11] ">
+        <div className="relative md:bg-gradient-to-t to-[#060C16] via-[#22091B] from-[#011C11] ">
         
             <h2 className="text-[24px] md:text-[49px] z-30 relative font-bold text-center pt-[37px]">Déroulement du training</h2>
             <div className="flex px-5 my-[62px]  relative z-30 items-start md:items-center justify-center gap-x-[14px] md:gap-x-[110px]">

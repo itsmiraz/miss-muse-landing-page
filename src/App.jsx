@@ -18,8 +18,8 @@ function App() {
       <Training />
       <Receive />
     <StartNow />
-    {/*    <About />
-      <Footer /> */}
+    <About />
+   <Footer />
     </main>
   )
 }
