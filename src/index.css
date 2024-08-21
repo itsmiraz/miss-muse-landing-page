@@ -9,3 +9,179 @@ body {
   background: #000000;
   color: white;
 }
+
+@keyframes gradientAnimation1 {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.gradient-animation-1 {
+  background: linear-gradient(90deg, #ffbf0f, #5df71b);
+  background-size: 200% 200%;
+  animation: gradientAnimation1 3s ease infinite;
+}
+
+@keyframes gradientAnimation2 {
+  0% {
+    background-position: 100% 50%;
+  }
+  50% {
+    background-position: 0% 50%;
+  }
+  100% {
+    background-position: 100% 50%;
+  }
+}
+
+.gradient-animation-2 {
+  background: linear-gradient(90deg, #0f3fd0, #30f2f2);
+  background-size: 200% 200%;
+  animation: gradientAnimation2 3s ease infinite;
+}
+@keyframes gradientAnimation3 {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.gradient-animation-3 {
+  background: linear-gradient(90deg, #873234, #ec30f2);
+  background-size: 200% 200%;
+  animation: gradientAnimation3 4s ease infinite;
+}
+
+
+
+/* Glow Animation */
+:root {
+  --border-radius: 12px;
+  --glow-size: 15px; /* Size of the outer glow */
+  --glow-blur: 30px; /* Blur radius of the outer glow */
+}
+
+.glow-effect {
+  position: relative;
+  border-radius: var(--border-radius);
+  overflow: hidden;
+}
+
+.glow-effect::before {
+  content: '';
+  position: absolute;
+  top: -var(--glow-size);
+  left: -var(--glow-size);
+  right: -var(--glow-size);
+  bottom: -var(--glow-size);
+  border-radius: var(--border-radius);
+  z-index: -1; /* Ensures the glow is behind the content */
+  filter: blur(var(--glow-blur));
+  animation: outerGlowAnimation 5s linear infinite;
+  box-shadow: 0 0 15px rgba(255, 193, 216, 0.5); /* Initial state for the glow */
+}
+
+@keyframes outerGlowAnimation {
+  0% {
+    box-shadow: 0 0 15px rgba(255, 193, 216, 0.5);
+  }
+  25% {
+    box-shadow: 0 0 30px rgba(93, 247, 27, 0.5);
+  }
+  50% {
+    box-shadow: 0 0 45px rgba(15, 63, 208, 0.5);
+  }
+  75% {
+    box-shadow: 0 0 30px rgba(236, 48, 242, 0.5);
+  }
+  100% {
+    box-shadow: 0 0 15px rgba(255, 193, 216, 0.5);
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#dashed-line-animation {
+  display: block;
+  margin: 0 auto;
+  stroke-dasharray: 12 12;
+  stroke-dashoffset: 0;
+  animation: dash-animation 2s linear infinite;
+}
+
+@keyframes dash-animation {
+  0% {
+    stroke-dashoffset: 0;
+  }
+  100% {
+    stroke-dashoffset: -24; /* This value should be the negative length of the dash pattern (12 + 12) */
+  }
+}
+
+
+
+
+
+
+
+
+
+
+h1 {
+  display: inline-flex;
+}
+
+h1 span {
+  animation: colorChange 6s  infinite;
+}
+
+.word1 {
+  animation-delay: 0s;
+}
+
+.word2 {
+  animation-delay: 1s;
+}
+
+.word3 {
+  animation-delay: 2s;
+}
+
+@keyframes colorChange {
+  0% { color: #F71B9A; }
+  33% { color: white; }
+  66% { color: #3086F2; }
+  100% { color: #F71B9A; }
+}

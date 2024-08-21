@@ -33,16 +33,19 @@ export const Expertise_content = [
     {
         to: '#5DF71B',
         from: "#FFBF0F",
+        css: "gradient-animation-1",
         icon: <SpeakerIcon />,
         desc: "Apprenez les bases du marketing pour attirer de nouvelles clientes.",
     },
     {
+        css: "gradient-animation-2",
         to: '#30F2F2',
         from: '#0F3FD0',
         icon: <EyeIcon />,
         desc: "Acquérez la théorie et la pratique nécessaires pour poser des cils à vos premières clientes",
     },
     {
+        css: 'gradient-animation-3',
         to: '#EC30F2',
         from: '#873234',
         icon: <HeartIcon />,

@@ -10,7 +10,7 @@ const Receive = () => {
                     borderRadius: '20px',
                     background: `linear-gradient(to right, #89F220, #ED7523, #FF00C4,#3CFFFF)`
                 }}
-                className="max-w-[1270px] p-[1.5px] mx-auto  rounded-[24px]">
+                className="max-w-[1270px] z-30 relative p-[1.5px] mx-auto  rounded-[24px]">
                 <div className="  pt-[30px] pb-[60px] bg-gradient-to-b from-[#0F1D1A] to-[#111015] rounded-[20px]">
                     <h2 className="text-[48px] text-center  font-bold">
                         Ce que vous recevrez

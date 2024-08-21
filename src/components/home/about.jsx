@@ -17,7 +17,7 @@ const About = () => {
 
 
             <div className='w-fit -translate-y-10 grid place-items-center mx-auto bg-gradient-to-l from-[#F71B9A] to-[#FFB4DF] p-[1px] rounded-[24px]'>
-                <div className='bg-[#090909]  w-full rounded-[24px] py-[87px] px-[182px] space-y-[43px]'>
+                <div className='bg-gradient-to-b from-[#190B14] to-[#080909]  backdrop-blur-lg w-full rounded-[24px] py-[87px] px-[182px] space-y-[43px]'>
                     <p className='text-[29px] text-center'>
                         Salut! Je suis <span className='text-[#F71B9A] font-bold'>Salma Bensouda</span>, fondatrice de <span className='text-[#1EA1F1] font-bold'>Miss Muse Lashes</span>. <br /> Mon aventure dans le monde des <span className='font-bold'>extensions de cils</span> a commencé <br /> il y a presque cinq ans, alors que j'étais encore <span className='font-bold'>étudiante en <br /> commerce</span>. En équilibrant mes études et ma passion pour <span className='font-bold'>la <br />beauté</span>, j'ai démarré <span className='font-bold'>mon entreprise d'extensions de cils</span> et j'ai <br /> rapidement réalisé que c'était plus qu'un simple passe-temps <br /> c'était <span className='font-bold'>ma vocation</span>.
                     </p>

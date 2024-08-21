@@ -5,7 +5,7 @@ import { Expertise_content } from '../../constants'
 
 const Expertise = () => {
     return (
-        <div className="pt-5 bg-black relative pb-[174px] ">
+        <div className="pt-5 bg-[#060C16] relative pb-[174px] ">
             <div className='z-20 relative'>
 
                 <h2 className="text-center pb-16 text-[48px] font-bold">
@@ -14,24 +14,21 @@ const Expertise = () => {
 
                 <div className=' flex justify-center items-center gap-x-[34px] '>
                     {Expertise_content.map((item, i) => (
-                        <div
-                            className={`${i === 1 ? 'mt-[40px]' : ''} w-[400px] flex justify-center items-center h-[250px]`}
-                            key={i}
-                        >
-                            <div
-                                className="relative w-full h-full rounded-[12px] p-[2px] overflow-hidden"
-                                style={{
-                                    background: `linear-gradient(to right, ${item.from}, ${item.to})`,
-                                }}
-                            >
-                                <div className="w-full px-6 h-full bg-gray-900 rounded-[12px] flex justify-center items-center flex-col gap-4">
-                                    <div>{item.icon}</div>
-                                    <p className="text-[24px] font-bold text-center">
-                                        {item.desc}
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
+                     <div
+                     className={`${i === 1 ? 'mt-[40px]' : ''} glow-effect w-[400px] flex justify-center items-center h-[250px]`}
+                     key={i}
+                   >
+                     <div
+                       className={`${item.css} relative w-full h-full rounded-[12px] p-[2px] overflow-hidden`}
+                     >
+                       <div className="w-full px-6 h-full bg-gray-900 rounded-[12px] flex justify-center items-center flex-col gap-4">
+                         <div>{item.icon}</div>
+                         <p className="text-[24px] font-bold text-center">
+                           {item.desc}
+                         </p>
+                       </div>
+                     </div>
+                   </div>
                     )
                     )}
                 </div>
