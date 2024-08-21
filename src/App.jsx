@@ -17,8 +17,8 @@ function App() {
        <Expertise />
       <Training />
       <Receive />
-    {/*  <StartNow />
-      <About />
+    <StartNow />
+    {/*    <About />
       <Footer /> */}
     </main>
   )

@@ -9,30 +9,30 @@ import VioletBlob from '../../assets/images/glows/violet-blob.png'
 
 const StartNow = () => {
     return (
-        <div className="py-20 relative ">
+        <div className="py-20 px-6 relative ">
 
           <div className='relative z-20'>
-          <h2 className="text-center font-bold text-[48px]">
+           <h2 className="text-center font-bold text-[24px] md:text-[48px]">
                 Je Veux Commencer <span className="bg-clip-text text-transparent bg-gradient-to-r from-[#FF44C7] to-[#EC7DFF]">Maintenant</span> !
             </h2>
-            <p className="text-[32px] pt-[56px] leading-[40px] font-bold text-center">Envoyez-moi "<span className="text-[#FF5AB9]">JE SUIS PRÊTE</span>" par texto au <span className="text-[#6F9CFF]">
-                514-378-1226</span>  ou en message <br />
+            <p className="text-[16px] md:text-[32px] pt-[22px] md:pt-[56px] leading-[20px] md:leading-[40px] font-bold text-center">Envoyez-moi "<span className="text-[#FF5AB9]">JE SUIS PRÊTE</span>" par texto au <span className="text-[#6F9CFF]">
+                514-378-1226</span>  ou en message <br className='md:block hidden' />
                 privé sur <span className="text-[#FFF23C]">
-                    Instagram</span> pour connaître le prix de ma formation et <br /> commencer votre aventure dès que possible.</p>
-            <div className="pt-[57px] gap-x-[25px] flex justify-center items-center">
-                <div className='bg-gradient-to-b from-[#FF0093] to-[#3C0023] border rounded-[9px] w-fit flex items-center gap-x-2 py-[15px] px-[23px] border-[#F71B9A]'>
+                    Instagram</span> pour connaître le prix de ma formation et <br className='md:block hidden' /> commencer votre aventure dès que possible.</p>
+            <div className="pt-[22px] md:pt-[57px] gap-y-[12px] gap-x-[25px] flex md:flex-row flex-col justify-center items-center">
+                <div className='bg-gradient-to-b from-[#FF0093] to-[#3C0023] border rounded-[9px] justify-center w-full md:w-fit flex items-center gap-x-2 py-[8px] md:py-[15px] px-[23px] border-[#F71B9A]'>
                     <div>
-                        <img src={Instagram} alt='instagram-logo' />
+                        <img className='md:w-[40px] w-[20px]' src={Instagram} alt='instagram-logo' />
                     </div>
-                    <p className='text-[24px] font-bold'>
+                    <p className='text-[14px] md:text-[24px] font-bold'>
                         Envoyez un Message
                     </p>
                 </div>
-                <div className='bg-gradient-to-b from-[#31A307] to-[#123D03] border rounded-[9px] w-fit flex items-center gap-x-2 py-[15px] px-[23px] border-[#00CC00]'>
+                <div className='bg-gradient-to-b from-[#31A307] to-[#123D03] border rounded-[9px] justify-center w-full md:w-fit flex items-center gap-x-2 py-[8px] md:py-[15px] px-[23px] border-[#00CC00]'>
                     <div>
-                        <img src={IMessage} alt='imessage-logo' />
+                        <img className='md:w-[40px] w-[20px]' src={IMessage} alt='imessage-logo' />
                     </div>
-                    <p className='text-[24px] font-bold'>
+                    <p className='text-[14px] md:text-[24px] font-bold'>
                         Envoyez un Texto
                     </p>
                 </div>
