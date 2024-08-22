@@ -85,7 +85,7 @@ const Hero = () => {
         </div>
       </div>
       {/* Desktop */}
-      <motion.div
+      {/* <motion.div
         className="absolute md:block hidden  z-10 -top-[169px] -left-[100px] md:-left-[213px] opacity-50  md:opacity-25"
         variants={pinkGradientAnimation}
         initial="hidden"
@@ -100,7 +100,7 @@ const Hero = () => {
         animate="visible"
       >
         <img src={BlueGradient} className="md:max-w-[1102px]" alt="" />
-      </motion.div>
+      </motion.div> */}
       {/* Mobile */}
     {/* <motion.div
         className=" block md:hidden  z-10 -top-[169px] -left-[100px] md:-left-[213px] opacity-50  md:opacity-25"

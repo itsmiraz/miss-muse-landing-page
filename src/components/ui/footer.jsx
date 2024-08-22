@@ -8,7 +8,7 @@ import Line from '../../assets/icons/Line.svg'
 
 const Footer = () => {
     return (
-        <div className="bg-[#000000] pt-[20px] pb-[37px] md:pb-[50px]">
+        <div className=" pt-[20px] pb-[37px] md:pb-[50px]">
             <div className='flex flex-col justify-center items-center mx-auto'>
                 <img src={logo} alt='logo' className='max-w-[93px] md:max-w-[125px]' />
 

@@ -1,8 +1,9 @@
 import { Receive_Section_data } from "../../constants"
 import BlueFill from '../../assets/icons/BlueFill.svg'
 const Receive = () => {
+    //md:bg-gradient-to-t from-[#000000] to-[#011C11]
     return (
-        <div className="py-10 md:py-20 px-5  md:bg-gradient-to-t from-[#000000] to-[#011C11]">
+        <div className="py-10 md:py-20 px-5  ">
 
             <div
 

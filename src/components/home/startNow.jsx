@@ -44,13 +44,13 @@ const StartNow = () => {
             </div>
           </div>
           <div>
-            <img src={PinkEllipsis1} alt='' className='absolute -left-[350px] w-[898px] -top-60'/>
+            {/* <img src={PinkEllipsis1} alt='' className='absolute -left-[350px] w-[898px] -top-60'/>
             <img src={PinkEllipsis2} alt='' className='absolute -left-[250px] w-[898px] top-40'/>
             <img src={PinkBlob} alt='' className='absolute -right-[250px] opacity-20 w-[1000px] -top-96'/>
             <img src={PinkEllipsis1} alt='' className='absolute -right-[350px] w-[898px] -top-60'/>
             <img src={PinkEllipsis2} alt='' className='absolute -right-[250px] w-[898px] top-40'/>
             <img src={PinkBlob} alt='' className='absolute -left-[200px] opacity-20 w-[1400px] -bottom-[1000px]'/>
-            <img src={VioletBlob} alt='' className='absolute z-10 -left-[200px] opacity-20 w-[1400px] -top-[700px]'/>
+            <img src={VioletBlob} alt='' className='absolute z-10 -left-[200px] opacity-20 w-[1400px] -top-[700px]'/> */}
           </div>
         </div>
     )
