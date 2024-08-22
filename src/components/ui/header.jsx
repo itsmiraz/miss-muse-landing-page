@@ -9,8 +9,11 @@ const Header = () => {
             </ul>
             <div className="md:flex  hidden items-center gap-x-[14px]">
                 <PhoneIcon />
+                <a className='w-full md:w-fit' href="tel:+5143781226" >
 
                 <p className="text-xl">514-378-1226</p>
+                </a>
+
             </div>
         </div>
     )

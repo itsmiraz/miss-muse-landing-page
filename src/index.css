@@ -5,6 +5,16 @@
 @tailwind components;
 @tailwind utilities;
 
+
+@property --a {
+  syntax: '<angle>';
+  inherits: false;
+  initial-value: 90deg;
+}
+
+html {
+  scroll-behavior: smooth;
+}
 body {
   background: #000000;
   color: white;
@@ -184,4 +194,89 @@ h1 span {
   33% { color: white; }
   66% { color: #3086F2; }
   100% { color: #F71B9A; }
+}
+
+
+
+
+
+
+
+
+/* Rainbox glowing border */
+.rainbow-border {
+  position: relative;
+}
+
+.rainbow-border::before,
+.rainbow-border::after {
+  content: '';
+  display: block;
+  position: absolute;
+  inset: -.1rem;
+  border-radius: 1.1rem;
+
+  --a: 0deg;
+
+  background-image: 
+    conic-gradient(
+      from var(--a) at 50% 50% in oklch longer hue, 
+      oklch(70% .3 0) 0%, oklch(70% 0.30 0) 100%
+    );
+
+  animation: animatedBgAngle 5s linear infinite;
+}
+
+.rainbow-border::before {
+  z-index: -1;
+}
+
+.rainbow-border::after {
+  z-index: -2;
+  filter: blur(25px);
+  opacity: .35;
+}
+
+@supports not (background-image: conic-gradient(from 0deg at 50% 50% in oklch longer hue, oklch(70% .3 0) 0%, oklch(70% 0.30 0) 100%)) {
+  .rainbow-border::before,
+  .rainbow-border::after {
+    background-image: linear-gradient(
+      var(--a),
+      rgba(255, 0, 0, 1) 0%,
+      rgba(255, 154, 0, 1) 10%,
+      rgba(208, 222, 33, 1) 20%,
+      rgba(79, 220, 74, 1) 30%,
+      rgba(63, 218, 216, 1) 40%,
+      rgba(47, 201, 226, 1) 50%,
+      rgba(28, 127, 238, 1) 60%,
+      rgba(95, 21, 242, 1) 70%,
+      rgba(186, 12, 248, 1) 80%,
+      rgba(251, 7, 217, 1) 90%,
+      rgba(255, 0, 0, 1) 100%
+    );
+
+    background-image: conic-gradient(
+      from var(--a) at 50% 50%,
+      rgba(255, 0, 0, 1) 0%,
+      rgba(255, 154, 0, 1) 10%,
+      rgba(208, 222, 33, 1) 20%,
+      rgba(79, 220, 74, 1) 30%,
+      rgba(63, 218, 216, 1) 40%,
+      rgba(47, 201, 226, 1) 50%,
+      rgba(28, 127, 238, 1) 60%,
+      rgba(95, 21, 242, 1) 70%,
+      rgba(186, 12, 248, 1) 80%,
+      rgba(251, 7, 217, 1) 90%,
+      rgba(255, 0, 0, 1) 100%
+    );
+  }
+}
+
+@keyframes animatedBgAngle {
+  from {
+    --a: 0deg;
+  }
+  to {
+    --a: 360deg;
+  }
 }

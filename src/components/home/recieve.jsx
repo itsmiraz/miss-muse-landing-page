@@ -6,12 +6,12 @@ const Receive = () => {
 
             <div
 
-                style={{
-                    borderRadius: '20px',
-                    background: `linear-gradient(to right, #89F220, #ED7523, #FF00C4,#3CFFFF)`
-                }}
-                className="max-w-[1270px] z-30 relative p-[1.5px] mx-auto  rounded-[24px]">
-                <div className="  pt-[30px] pb-[60px] bg-gradient-to-b from-[#0F1D1A] to-[#111015] rounded-[20px]">
+                // style={{
+                //     borderRadius: '20px',
+                //     background: `linear-gradient(to right, #89F220, #ED7523, #FF00C4,#3CFFFF)`
+                // }}
+                className="max-w-[1270px] rainbow-border z-30 relative p-[1px] mx-auto  rounded-[24px]">
+                <div className="w-full h-full  pt-[30px] pb-[60px] bg-gradient-to-b from-[#0F1D1A] to-[#111015] rounded-[20px]">
                     <h2 className="text-[24px] md:text-[48px] text-center  font-bold">
                         Ce que vous recevrez
                     </h2>
@@ -19,8 +19,11 @@ const Receive = () => {
                     <div className="grid px-[24px] md:px-[66px] place-items-center mt-[50px] grid-cols-1 md:grid-cols-2 gap-10">
                         {
                             Receive_Section_data.map((item, i) => <div className="flex md:flex-row flex-col max-w-[549px] justify-center md:justify-start items-center md:items-center gap-2 md:gap-8" key={i}>
-                                <div className="md:w-[190px] w-[106px]">
-                                    {item.icon}
+                                <div className="md:block hidden">
+                                    {item.lgIcon}
+                                </div>
+                                <div className="block md:hidden">
+                                    {item.smIcon}
                                 </div>
                                 <div className="space-y-[6px] md:space-y-2">
                                     <div className="flex md:justify-start justify-center gap-x-[6px] md:gap-x-[11px] items-center">

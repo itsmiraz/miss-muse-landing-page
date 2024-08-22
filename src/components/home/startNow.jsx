@@ -9,7 +9,7 @@ import VioletBlob from '../../assets/images/glows/violet-blob.png'
 
 const StartNow = () => {
     return (
-        <div className="py-20 px-6 relative ">
+        <div id='startNow' className="py-20 px-6 relative ">
 
           <div className='relative z-20'>
            <h2 className="text-center font-bold text-[24px] md:text-[48px]">
@@ -20,7 +20,8 @@ const StartNow = () => {
                 privé sur <span className="text-[#FFF23C]">
                     Instagram</span> pour connaître le prix de ma formation et <br className='md:block hidden' /> commencer votre aventure dès que possible.</p>
             <div className="pt-[22px] md:pt-[57px] gap-y-[12px] gap-x-[25px] flex md:flex-row flex-col justify-center items-center">
-                <div className='bg-gradient-to-b from-[#FF0093] to-[#3C0023] border rounded-[9px] justify-center w-full md:w-fit flex items-center gap-x-2 py-[8px] md:py-[15px] px-[23px] border-[#F71B9A]'>
+              <a className='w-full md:w-fit' target='_blank' href='https://www.instagram.com/missmuselashes/'>
+              <div className='bg-gradient-to-b from-[#FF0093] to-[#3C0023] border rounded-[9px] justify-center w-full md:w-fit flex items-center gap-x-2 py-[8px] md:py-[15px] px-[23px] border-[#F71B9A]'>
                     <div>
                         <img className='md:w-[40px] w-[20px]' src={Instagram} alt='instagram-logo' />
                     </div>
@@ -28,7 +29,10 @@ const StartNow = () => {
                         Envoyez un Message
                     </p>
                 </div>
-                <div className='bg-gradient-to-b from-[#31A307] to-[#123D03] border rounded-[9px] justify-center w-full md:w-fit flex items-center gap-x-2 py-[8px] md:py-[15px] px-[23px] border-[#00CC00]'>
+              </a>
+               <a className='w-full md:w-fit' href="tel:+5143781226" >
+
+               <div className='bg-gradient-to-b from-[#31A307] to-[#123D03] border rounded-[9px] justify-center w-full md:w-fit flex items-center gap-x-2 py-[8px] md:py-[15px] px-[23px] border-[#00CC00]'>
                     <div>
                         <img className='md:w-[40px] w-[20px]' src={IMessage} alt='imessage-logo' />
                     </div>
@@ -36,6 +40,7 @@ const StartNow = () => {
                         Envoyez un Texto
                     </p>
                 </div>
+               </a>
             </div>
           </div>
           <div>
