@@ -15,15 +15,15 @@ const Footer = () => {
 
                 <p className='text-[18px] md:text-[24px] pb-[26px]'>Montreal, Quebec</p>
                 <div className='flex items-center pb-[19px] gap-x-4'>
-                   <div className='md:size-[30px] size-[22px]'>
+                   <a href='https://www.instagram.com/missmuselashes/' target='_blank' className='md:size-[30px] size-[22px]'>
                    <InstaGram />
-                   </div>
-                    <div className='md:size-[30px] size-[22px]'>
+                   </a>
+                    <a target='_blank' href='https://www.tiktok.com/@missmuselashes?_t=8p3uYZQffnB&_r=1' className='md:size-[30px] size-[22px]'>
                     <TiktokIcon />
-                    </div>
-                    <div className='md:size-[30px] size-[22px]'>
+                    </a>
+                    <a href='https://www.facebook.com/share/MMfd5fMVSJqkS8uQ/?mibextid=LQQJ4d' target='_blank' className='md:size-[30px] size-[22px]'>
                     <Facebookicon />
-                    </div>
+                    </a>
 
                 </div>
                 <Line />

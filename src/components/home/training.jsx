@@ -14,7 +14,7 @@ const Training = () => {
         <div className="relative md:bg-gradient-to-t to-[#000000] via-[#22091B] from-[#011C11] ">
         
             <h2 className="text-[24px] md:text-[49px] z-30 relative font-bold text-center pt-[37px]">Déroulement du training</h2>
-            <div className="flex px-5 mt-[62px]  relative z-30 items-start md:items-center justify-center gap-x-[14px] md:gap-x-[110px]">
+            <div className="flex px-6 mt-[62px]  relative z-30 items-start md:items-center justify-center gap-x-[14px] md:gap-x-[110px]">
                 <div className="relative  w-[65px]">
                     {/* <motion.div
                         initial={{ height: 0 }}
