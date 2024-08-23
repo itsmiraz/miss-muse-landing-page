@@ -1,11 +1,6 @@
 /* eslint-disable react/no-unescaped-entities */
 import Instagram from '../../assets/images/instagram.png'
 import IMessage from '../../assets/images/imessage.png'
-import PinkEllipsis1 from '../../assets/images/glows/light-Ellipse.png'
-import PinkEllipsis2 from '../../assets/images/glows/light-ellipsis-2.png'
-import PinkBlob from '../../assets/images/glows/pink-blob-shape.png'
-import VioletBlob from '../../assets/images/glows/violet-blob.png'
-
 
 const StartNow = () => {
     return (
@@ -30,7 +25,7 @@ const StartNow = () => {
                     </p>
                 </div>
               </a>
-               <a className='w-full md:w-fit' href="tel:+5143781226" >
+               <a className='w-full md:w-fit' href="sms:+5143781226" >
 
                <div className='bg-gradient-to-b from-[#31A307] to-[#123D03] border rounded-[9px] justify-center w-full md:w-fit flex items-center gap-x-2 py-[8px] md:py-[15px] px-[23px] border-[#00CC00]'>
                     <div>
@@ -43,15 +38,7 @@ const StartNow = () => {
                </a>
             </div>
           </div>
-          <div>
-            {/* <img src={PinkEllipsis1} alt='' className='absolute -left-[350px] w-[898px] -top-60'/>
-            <img src={PinkEllipsis2} alt='' className='absolute -left-[250px] w-[898px] top-40'/>
-            <img src={PinkBlob} alt='' className='absolute -right-[250px] opacity-20 w-[1000px] -top-96'/>
-            <img src={PinkEllipsis1} alt='' className='absolute -right-[350px] w-[898px] -top-60'/>
-            <img src={PinkEllipsis2} alt='' className='absolute -right-[250px] w-[898px] top-40'/>
-            <img src={PinkBlob} alt='' className='absolute -left-[200px] opacity-20 w-[1400px] -bottom-[1000px]'/>
-            <img src={VioletBlob} alt='' className='absolute z-10 -left-[200px] opacity-20 w-[1400px] -top-[700px]'/> */}
-          </div>
+         
         </div>
     )
 }

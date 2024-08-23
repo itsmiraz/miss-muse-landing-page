@@ -1,16 +1,12 @@
 import { Receive_Section_data } from "../../constants"
 import BlueFill from '../../assets/icons/BlueFill.svg'
 const Receive = () => {
-    //md:bg-gradient-to-t from-[#000000] to-[#011C11]
     return (
         <div className="py-10 md:py-20 px-5  ">
 
             <div
 
-                // style={{
-                //     borderRadius: '20px',
-                //     background: `linear-gradient(to right, #89F220, #ED7523, #FF00C4,#3CFFFF)`
-                // }}
+               
                 className="max-w-[1270px] rainbow-border z-30 relative p-[1px] mx-auto  rounded-[24px]">
                 <div className="w-full h-full  pt-[30px] pb-[60px] bg-gradient-to-b from-[#0F1D1A] to-[#111015] rounded-[20px]">
                     <h2 className="text-[24px] md:text-[48px] text-center  font-bold">

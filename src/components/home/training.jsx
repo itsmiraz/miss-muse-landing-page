@@ -11,7 +11,7 @@ import { motion, } from 'framer-motion';
 const Training = () => {
 //md:bg-gradient-to-t to-[#000000] via-[#22091B] from-[#011C11] 
     return (
-        <div className="relative ">
+        <div id="progress" className="relative ">
         
             <h2 className="text-[24px] md:text-[49px] z-30 relative font-bold text-center pt-[37px]">Déroulement du training</h2>
             <div className="flex px-6 mt-[62px] md:-translate-x-20 relative z-30 items-start md:items-center justify-center gap-x-[14px] md:gap-x-[110px]">
@@ -26,7 +26,7 @@ const Training = () => {
                        <DashedLine /> 
                        </div>
                     <motion.div
-                        className="absolute md:w-[125px] md:h-[125px] w-[65px] h-[65px]  -top-4 md:-top-10 -left-2 md:-left-8"
+                        className="absolute md:w-[125px] md:h-[125px] w-[65px] h-[65px]  -top-4 md:-top-10 -left-2 md:-left-[29px]"
                         initial={{ scale: 0.8, opacity: 0 }}
                         whileInView={{ scale: 1, opacity: 1 }}
                         viewport={{ once: true, amount: 0.2 }}
@@ -36,7 +36,7 @@ const Training = () => {
                     </motion.div>
 
                     <motion.div
-                        className="absolute  md:w-[125px] md:h-[125px] w-[65px] h-[65px] top-72 md:top-96 -left-2 md:-left-8"
+                        className="absolute  md:w-[125px] md:h-[125px] w-[65px] h-[65px] top-72 md:top-96 -left-2 md:-left-[29px]"
                         initial={{ scale: 0.8, opacity: 0 }}
                         whileInView={{ scale: 1, opacity: 1 }}
                         viewport={{ once: true, amount: 0.2 }}
@@ -46,7 +46,7 @@ const Training = () => {
                     </motion.div>
 
                     <motion.div
-                        className="absolute  md:w-[125px] md:h-[125px] w-[65px] h-[65px] -bottom-8 md:-bottom-10 -left-2 md:-left-8"
+                        className="absolute  md:w-[125px] md:h-[125px] w-[65px] h-[65px] -bottom-8 md:-bottom-10 -left-2 md:-left-[29px]"
                         initial={{ scale: 0.8, opacity: 0 }}
                         whileInView={{ scale: 1, opacity: 1 }}
                         viewport={{ once: true, amount: 0.2 }}

@@ -2,10 +2,9 @@ import PinkGradient from "../../assets/gradients/expertise-pink-gradient.png";
 import BlueGradient from "../../assets/gradients/expertise-blue-gradient.png";
 import { Expertise_content } from "../../constants";
 
-//md:bg-[#060C16]
 const Expertise = () => {
   return (
-    <div className="pt-5  relative pb-[174px] ">
+    <div id="benefits" className="pt-5  relative pb-[174px] ">
       <div className="z-20 relative">
         <h2 className="text-center pb-[23px] md:pb-16 text-[24px] md:text-[48px] font-bold">
           À quoi s’attendre

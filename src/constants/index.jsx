@@ -5,23 +5,20 @@
 export const Navlinks = [
   {
     label: "Accueuil",
-    link: "/",
+    link: "#hero",
   },
-  {
-    label: "Avantages",
-    link: "/",
-  },
+  
   {
     label: "Déroulement",
-    link: "/",
+    link: "#progress",
   },
   {
     label: "Bénéfices",
-    link: "/",
+    link: "#benefits",
   },
   {
     label: "À Propos",
-    link: "/",
+    link: "#about",
   },
 ];
 
