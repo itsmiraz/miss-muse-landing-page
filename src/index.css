@@ -166,15 +166,12 @@ body {
 
 
 
-
-
-
 h1 {
   display: inline-flex;
 }
 
 h1 span {
-  animation: colorChange 6s  infinite;
+  animation: colorChange 6s infinite;
 }
 
 .word1 {
@@ -182,21 +179,18 @@ h1 span {
 }
 
 .word2 {
-  animation-delay: 1s;
+  animation-delay: 2s; /* Shifted by 2 seconds */
 }
 
 .word3 {
-  animation-delay: 2s;
+  animation-delay: 4s; /* Shifted by 4 seconds */
 }
 
 @keyframes colorChange {
-  0% { color: #F71B9A; }
-  33% { color: white; }
-  66% { color: #3086F2; }
-  100% { color: #F71B9A; }
+  0%, 33% { color: #F71B9A; } /* Pink */
+  34%, 66% { color: white; } /* White */
+  67%, 100% { color: #3086F2; } /* Blue */
 }
-
-
 
 
 
