@@ -1,4 +1,4 @@
-<svg id="dashed-line-animation" width="4" height="892" viewBox="0 0 4 892" fill="none" xmlns="http://www.w3.org/2000/svg">
+<svg  width="4" height="892" viewBox="0 0 4 892" fill="none" xmlns="http://www.w3.org/2000/svg">
   <path d="M2 0L1.99996 892" stroke="url(#paint0_linear_241_461)" stroke-width="3" stroke-dasharray="12 12"/>
   <defs>
     <linearGradient id="paint0_linear_241_461" x1="2.5" y1="2.18557e-08" x2="2.49996" y2="892" gradientUnits="userSpaceOnUse">
