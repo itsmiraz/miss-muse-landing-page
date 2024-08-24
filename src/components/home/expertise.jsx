@@ -1,10 +1,10 @@
-import PinkGradient from "../../assets/gradients/expertise-pink-gradient.png";
-import BlueGradient from "../../assets/gradients/expertise-blue-gradient.png";
+// import PinkGradient from "../../assets/gradients/expertise-pink-gradient.png";
+// import BlueGradient from "../../assets/gradients/expertise-blue-gradient.png";
 import { Expertise_content } from "../../constants";
 
 const Expertise = () => {
   return (
-    <div id="benefits" className="pt-5  relative pb-[174px] ">
+    <div id="expertise" className="pt-5  relative pb-[174px] ">
       <div className="z-20 relative">
         <h2 className="text-center pb-[23px] md:pb-16 text-[24px] md:text-[48px] font-bold">
           À quoi s’attendre
@@ -48,12 +48,12 @@ const Expertise = () => {
           ))}
         </div>
       </div>
-      <div className="absolute -left-[790px] top-1/2 transform -translate-y-1/2">
+      {/* <div className="absolute -left-[790px] top-1/2 transform -translate-y-1/2">
         <img src={PinkGradient} className="w-[1644px]" alt="" />
       </div>
       <div className="absolute -right-[790px] top-1/2 transform -translate-y-1/2">
         <img src={BlueGradient} className="w-[1644px]" alt="" />
-      </div>
+      </div> */}
     </div>
   );
 };

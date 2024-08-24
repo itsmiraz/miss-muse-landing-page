@@ -1,13 +1,14 @@
-// import SpeakerIcon from "../assets/icons/Speaker.svg";
-// import EyeIcon from "../assets/icons/Eye.svg";
-// import HeartIcon from "../assets/icons/Heart.svg";
+
 
 export const Navlinks = [
   {
     label: "Accueuil",
     link: "#hero",
   },
-  
+  {
+    label:"Avantages",
+    link:'#expertise'
+  },
   {
     label: "Déroulement",
     link: "#progress",

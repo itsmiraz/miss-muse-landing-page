@@ -8,8 +8,12 @@ import Training from "./components/home/training";
 import Footer from "./components/ui/footer";
 import {motion } from 'framer-motion'
 import Header from "./components/ui/header";
-import PinkBlob from './assets/gradients/PinkGradient.png'
-import BlueGlowImg from './assets/gradients/BlueGradient.png'
+import PinkBlob from './assets/images/hero/pink-glow.png'
+import BlueGlowImg from './assets/images/hero/blue-glow.png'
+
+
+
+
 function App() {
   const { scrollYProgress } = useScroll();
   const springConfig = {
@@ -17,8 +21,8 @@ function App() {
     damping: 20,
     mass: 1,
   };
-  const rotateEllipsis1 = useTransform(scrollYProgress, [0, 1], [0, -180]);
-  const rotateEllipsis2 = useTransform(scrollYProgress, [0, 1], [0, 180]);
+  const rotateEllipsis1 = useTransform(scrollYProgress, [0, 1], [0, -360]);
+  const rotateEllipsis2 = useTransform(scrollYProgress, [0, 1], [0, 360]);
   const springRotateEllipsis1 = useSpring(rotateEllipsis1, springConfig);
   const springRotateEllipsis2 = useSpring(rotateEllipsis2, springConfig);
   return (
@@ -35,7 +39,7 @@ function App() {
 <Footer />
     </div>
    <motion.div
-        className="fixed w-[1000px]  z-10 -top-[50px] md:-top-[169px] -left-[500px] md:-left-[213px] opacity-25"
+        className="fixed w-[1500px]   z-10 -top-[300px] md:-top-[169px] -left-[600px] md:-left-[500px] opacity-25"
         style={{ rotate: springRotateEllipsis1 }}
         initial="hidden"
         animate="visible"
@@ -43,7 +47,7 @@ function App() {
         <img src={PinkBlob} className="w-[1000px] md:w-[1102px]" alt="" />
       </motion.div>
       <motion.div
-        className="fixed  w-[1000px]  z-10 -top-[0px] -right-[500px] md:-right-[213px] opacity-25"
+        className="fixed  w-[1500px]  z-10 -top-[0px] -right-[500px] md:-right-[500px] opacity-25"
         style={{ rotate: springRotateEllipsis2 }}
         initial="hidden"
         animate="visible"

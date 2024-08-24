@@ -2,7 +2,7 @@ import { Receive_Section_data } from "../../constants"
 import BlueFill from '../../assets/icons/BlueFill.svg'
 const Receive = () => {
     return (
-        <div className="py-10 md:py-20 px-5  ">
+        <div id="benefits" className="py-10 md:py-20 px-5  ">
 
             <div
 
