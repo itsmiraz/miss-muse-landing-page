@@ -174,7 +174,7 @@ export const Training_steps = [
         `Astuces pour attirer de nouveaux clients`,
         `Conseils pour démarrer ton entreprise`,
         `Pratique sur modèle (lash lift + tint)`,
-        `Séances photos pro avec certificats`,
+        `Seance photo pro avec certificats`,
       ],
     },
   },
@@ -197,7 +197,7 @@ export const Receive_Section_data = [
     lgIcon: <LgBagEyeIcon />,
     smIcon: <SmBagEyeIcon />,
     title: "Kit complet de cils",
-    desc: "Le  kit comprend une gamme complète d'outils pour l'application et l'amélioration des cils.",
+    desc: "Le kit comprend une gamme complète d’outils pour l’application des cils à vos premières clientes.",
   },
   {
     lgIcon: <LgCirtificate />,

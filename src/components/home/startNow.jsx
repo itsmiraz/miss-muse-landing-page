@@ -25,7 +25,7 @@ const StartNow = () => {
                     </p>
                 </div>
               </a>
-               <a className='w-full md:w-fit' href="sms:+5143781226" >
+               <a className='w-full md:w-fit' href="sms:+15143781226" >
 
                <div className='bg-gradient-to-b from-[#31A307] to-[#123D03] border rounded-[9px] justify-center w-full md:w-fit flex items-center gap-x-2 py-[8px] md:py-[15px] px-[23px] border-[#00CC00]'>
                     <div>

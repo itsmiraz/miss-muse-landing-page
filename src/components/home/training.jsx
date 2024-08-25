@@ -1,10 +1,10 @@
 import { Training_steps } from "../../constants";
-import CheckIcon from "../../assets/icons/GreenCheck.svg";
 import DashedLine from "../../assets/icons/DashedLine.svg";
 import Step1 from "../../assets/icons/Step1.svg";
 import Step2 from "../../assets/icons/Step2.svg";
 import Step3 from "../../assets/icons/Step3.svg";
-
+import LargeCheckicon from '../../assets/icons/LargeCheckIcon.svg'
+import SmCheckicon from '../../assets/icons/SmCheckIcon.svg'
 import { motion } from "framer-motion";
 
 const Training = () => {
@@ -104,8 +104,11 @@ const Training = () => {
                 >
                   {item.desc.steps.map((step, i) => (
                     <div className="flex gap-x-3 items-center" key={i}>
-                      <div className="w-[15px] h-[14px] md:w-[27px] md:h-[25px]">
-                        <CheckIcon />
+                      <div className="md:block hidden">
+                       <LargeCheckicon/>
+                      </div>
+                      <div className="block md:hidden">
+                       <SmCheckicon/>
                       </div>
                       <div
                         className="text-[11px] md:text-[20px] font-bold"

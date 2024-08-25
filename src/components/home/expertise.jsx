@@ -4,7 +4,7 @@ import { Expertise_content } from "../../constants";
 
 const Expertise = () => {
   return (
-    <div id="expertise" className="pt-5  relative pb-[174px] ">
+    <div id="expertise" className="pt-5  relative pb-5 md:pb-[174px] ">
       <div className="z-20 relative">
         <h2 className="text-center pb-[23px] md:pb-16 text-[24px] md:text-[48px] font-bold">
           À quoi s’attendre
