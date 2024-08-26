@@ -9,7 +9,7 @@ import Footer from "./components/ui/footer";
 import Header from "./components/ui/header";
 
 import MergedGlows from './assets/images/hero/combined glow-lg.png'
-import MergedGlowsSM from './assets/images/hero/combined-glow-sm.png'
+import MergedGlowsSM from './assets/images/hero/combined-glow-sm.webp'
 
 
 function App() {
@@ -27,7 +27,7 @@ function App() {
         <Footer />
       </div>
       <div
-        className="fixed w-[580px] md:w-[1400px] mx-auto h-[600px] md:h-[1000px] z-10 inset-0 flex items-center justify-center   opacity-25"
+        className="fixed w-[380px] md:w-[1400px] mx-auto h-[600px] md:h-[1000px] z-10 inset-0 flex items-center justify-center   opacity-25"
       >
         
        <motion.div
@@ -49,7 +49,8 @@ function App() {
           repeat: Infinity,       // Repeat the animation infinitely
           ease: "linear",         // Use a linear easing function for constant speed
           duration: 15,           // Set the duration of one full rotation
-        }}>
+        }}
+        >
        <img src={MergedGlowsSM} className="w-[500px]" alt="" />
        </motion.div>
       </div>
