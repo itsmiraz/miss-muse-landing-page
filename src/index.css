@@ -161,39 +161,64 @@ body {
 }
 
 
-
-
-
-
-
-h1 {
-  display: inline-flex;
+@keyframes colorShift {
+  0%, 100% {
+    opacity: 1;
+  }
+  25% {
+    opacity: 0;
+  }
+  75% {
+    opacity: 0;
+  }
 }
 
-h1 span {
-  animation: colorChange 6s infinite ease-in-out;
+@keyframes textGrow {
+  0% {
+    transform: scaleX(0);
+    opacity: 0;
+  }
+  100% {
+    transform: scaleX(1);
+    opacity: 1;
+  }
 }
 
-.word1 {
+
+
+.word {
+  position: relative;
+  overflow: hidden;
+}
+
+.word span {
+  display: block;
+  position: absolute;
+  width: 100%;
+  transform-origin: left;
+  transition: color 1s ease-in-out;
+}
+
+.word:nth-child(1) span:first-child {
+  animation: colorShift 6s ease-in-out infinite;
   animation-delay: 0s;
 }
 
-.word2 {
-  animation-delay: 2s; /* Shifted by 2 seconds */
+.word:nth-child(2) span:first-child {
+  animation: colorShift 6s ease-in-out infinite;
+  animation-delay: 1.5s;
 }
 
-.word3 {
-  animation-delay: 4s; /* Shifted by 4 seconds */
+.word:nth-child(3) span:first-child {
+  animation: colorShift 6s ease-in-out infinite;
+  animation-delay: 3s;
 }
-@keyframes colorChange {
-  0%, 16.6% { color: #F71B9A; }  /* Pink */
-  33.3% { color: white; }         /* White */
-  50% { color: #3086F2; }         /* Blue */
-  
-  66.6% { color: #3086F2; }       /* Blue */
-  83.3% { color: #F71B9A; }       /* Pink */
-  100% { color: white; }          /* White */
+
+.word span:nth-child(2) {
+  animation: textGrow 1.5s ease-in-out forwards;
+  animation-delay: 1.5s;
 }
+
 
 
 

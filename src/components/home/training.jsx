@@ -13,17 +13,17 @@ const Training = () => {
       <h2 className="text-[24px] md:text-[49px] z-30 relative font-bold text-center pt-[37px]">
         Déroulement du training
       </h2>
-      <div className="flex px-6 mt-[62px] md:-translate-x-20 relative z-30 items-start md:items-center justify-center gap-x-[14px] md:gap-x-[110px]">
+      <div className="flex px-6 mt-[62px] md:-translate-x-20 relative z-30 items-start md:items-start justify-center gap-x-[14px] md:gap-x-[110px]">
         {/* This is the Line i wanted the animation here */}
-        <div className="relative w-[65px]">
-          <div className="h-[600px] flex justify-center items-start md:h-[907px] overflow-hidden">
+        <div className="mt-2 md:mt-6 relative w-[65px]">
+          <div className="h-[600px] flex justify-center items-start md:h-[960px] overflow-hidden">
             {/* Dashed Line Animation */}
             <motion.div
-              className="overflow-hidden  flex justify-center items-start h-[600px] md:h-[907px]"
-              initial={{ height: 0 }} // Starting point
-              whileInView={{ height: '100%' }} // Final point
-              viewport={{ once: true, amount: 0.5 }} // Animate when in view
-              transition={{ duration: 2 }} // Animation duration
+              className="overflow-hidden  flex justify-center items-start h-full"
+              initial={{ height: 0 }} 
+              whileInView={{ height: '100%' }} 
+              viewport={{ once: true, amount: 0.5 }} 
+              transition={{ duration: 2 }} 
             >
               <DashedLine />
             </motion.div>
@@ -40,7 +40,7 @@ const Training = () => {
           </motion.div>
 
           <motion.div
-            className="absolute md:w-[125px] md:h-[125px] w-[65px] h-[65px] top-72 md:top-96 -left-2 md:-left-[29px]"
+            className="absolute md:w-[125px] md:h-[125px] w-[65px] h-[65px] top-[17.5rem] md:top-[28rem] -left-2 md:-left-[29px]"
             initial={{ scale: 0.8, opacity: 0 }}
             whileInView={{ scale: 1, opacity: 1 }}
             viewport={{ once: true, amount: 0.2 }}
@@ -51,7 +51,7 @@ const Training = () => {
           </motion.div>
 
           <motion.div
-            className="absolute md:w-[125px] md:h-[125px] w-[65px] h-[65px] -bottom-8 md:-bottom-10 -left-2 md:-left-[29px]"
+            className="absolute md:w-[125px] md:h-[125px] w-[65px] h-[65px] -bottom-6 md:-bottom-8 -left-2 md:-left-[29px]"
             initial={{ scale: 0.8, opacity: 0 }}
             whileInView={{ scale: 1, opacity: 1 }}
             viewport={{ once: true, amount: 0.2 }}
