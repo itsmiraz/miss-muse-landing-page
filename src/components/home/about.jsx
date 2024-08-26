@@ -1,5 +1,6 @@
 /* eslint-disable react/no-unescaped-entities */
 import Woman from "../../assets/images/woman.png";
+import LineBreak from "../ui/LineBreak";
 
 const About = () => {
   return (
@@ -18,54 +19,35 @@ const About = () => {
       <div className="w-fit -translate-y-6  md:-translate-y-10 grid place-items-center mx-auto bg-gradient-to-l from-[#F71B9A] to-[#FFB4DF] p-[1px] rounded-[24px]">
         <div className="bg-gradient-to-b from-[#190B14] to-[#080909]  backdrop-blur-lg w-full rounded-[24px] py-[40px] md:py-[87px] px-5 md:px-[182px] space-y-[43px]">
           <p className="text-[16px]  md:text-[29px] text-center">
-            Salut! Je suis{" "}
-            <span className="text-[#F71B9A] font-bold">Salma Bensouda</span>,
-            fondatrice de{" "}
-            <span className="text-[#1EA1F1] font-bold">Miss Muse Lashes</span>.{" "}
-            <br className="md:block hidden" /> Mon aventure dans le monde des{" "}
-            <span className="font-bold">extensions de cils</span> a commencé{" "}
-            <br className="md:block hidden" /> il y a presque cinq ans, alors
-            que j'étais encore{" "}
-            <span className="font-bold">
-              étudiante en <br className="md:block hidden" /> commerce
-            </span>
-            . En équilibrant mes études et ma passion pour{" "}
-            <span className="font-bold">
-              la <br className="md:block hidden" />
-              beauté
-            </span>
-            , j'ai démarré{" "}
-            <span className="font-bold">
-              mon entreprise d'extensions de cils
-            </span>
-            et j'ai <br className="md:block hidden" /> rapidement réalisé que
-            c'était plus qu'un simple passe-temps
-            <br className="md:block hidden" /> c'était
-            <span className="font-bold">ma vocation</span>.
+            Salut! Je suis
+            <span className="text-[#F71B9A] font-bold"> Salma Bensouda</span>,
+            fondatrice de
+            <span className="text-[#1EA1F1] font-bold"> Miss Muse Lashes</span>.
+            <LineBreak /> Mon aventure dans le monde des extensions de cils a
+            commencé il <LineBreak />y a presque <FontBold>cinq ans</FontBold>,
+            alors que j'étais encore étudiante en <LineBreak />
+            commerce. En équilibrant mes études et ma passion pour la
+            <LineBreak /> beauté, j'ai démarré
+            <FontBold> mon entreprise d'extensions de cils </FontBold>
+            et j'ai <LineBreak /> rapidement réalisé que c'était plus qu'un
+            simple passe-temps:
+            <LineBreak />
+            <FontBold>c'était ma vocation.</FontBold>
           </p>
 
           <p className="text-[16px]  md:text-[29px] text-center">
-            Après avoir <span className="font-bold">obtenu mon diplôme</span>, ma
-            <span className="font-bold">
-              clientèle a continué de <br className="md:block hidden" /> croître
-            </span> , et j'ai décidé de me  <span className="font-bold">consacrer pleinement</span> à cette
-            <br className="md:block hidden" /> aventure passionnante. Pour
-            offrir <span className="font-bold">les meilleurs services</span>
-            <br className="md:block hidden" /> possibles, j'ai continué à
-            <span className="font-bold">améliorer mes compétences</span> en
-            suivant <br className="md:block hidden" />
-            <span className="font-bold">un cours de marketing</span> et
-            plusieurs cours avancés sur les <br className="md:block hidden" />
-            extensions de cils, élargissant ainsi
-            <span className="font-bold">la gamme de services</span> que je
-            <br className="md:block hidden" /> propose. Aujourd'hui, je suis
-            fière de détenir
-            <span className="font-bold">sept certifications</span> et
-            <br className="md:block hidden" /> d'avoir complété huit{" "}
-            <span className="font-bold">formations approfondies</span>, couvrant
-            divers <br className="md:block hidden" /> aspects de{" "}
-            <span className="font-bold">l'entrepreneuriat</span> et de la
-            beauté.
+            Après avoir obtenu mon diplôme, ma clientèle a continué de{" "}
+            <LineBreak /> croître, et j'ai décidé de me{" "}
+            <FontBold> consacrer pleinement </FontBold> à cette <LineBreak />{" "}
+            aventure passionnante. Pour offrir les meilleurs services possibles,{" "}
+            <LineBreak /> j'ai continué à améliorer mes compétences en suivant{" "}
+            <LineBreak /> <FontBold>un cours de marketing</FontBold> et
+            plusieurs cours avancés sur les <LineBreak /> extensions de cils,
+            élargissant ainsi la gamme de services que je <LineBreak /> propose.
+            Aujourd'hui, je suis fière de détenir{" "}
+            <FontBold>sept certifications</FontBold> et <LineBreak /> d'avoir
+            complété <FontBold>huit formations</FontBold> approfondies, couvrant
+            divers <LineBreak /> aspects de l'entrepreneuriat et de la beauté.
           </p>
         </div>
       </div>
@@ -74,3 +56,7 @@ const About = () => {
 };
 
 export default About;
+// eslint-disable-next-line react/prop-types
+const FontBold = ({ children }) => {
+  return <span className="font-bold">{children}</span>;
+};
