@@ -60,11 +60,11 @@ const Hero = () => {
           <span className="font-bold">en 3 jours !</span>
         </h2>
         <div className="bg-gradient-to-r to-[#8F77EA] from-[#666666] p-[1px] rounded-full">
-          {/* <a href="#startNow"> */}
+          <a href="#startNow">
           <button className="px-[26px] md:px-10 py-2 md:py-4 text-[13px] md:text-[28px] rounded-full font-bold bg-gradient-to-r from-[#F948AE] to-[#4320EF]">
             Commencez Maintenant!
           </button>
-          {/* </a> */}
+          </a>
         </div>
       </div>
     </div>

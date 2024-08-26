@@ -32,7 +32,7 @@ const About = () => {
             et j'ai <LineBreak /> rapidement réalisé que c'était plus qu'un
             simple passe-temps:
             <LineBreak />
-            <FontBold>c'était ma vocation.</FontBold>
+            <FontBold> c'était ma vocation.</FontBold>
           </p>
 
           <p className="text-[16px]  md:text-[29px] text-center">

@@ -40,7 +40,7 @@ const Training = () => {
           </motion.div>
 
           <motion.div
-            className="absolute md:w-[125px] md:h-[125px] w-[65px] h-[65px] top-[17.5rem] md:top-[27.5rem] -left-2 md:-left-[29px]"
+            className="absolute md:w-[125px] md:h-[125px] w-[65px] h-[65px] top-[17rem] md:top-[27.5rem] -left-2 md:-left-[29px]"
             initial={{ scale: 0.8, opacity: 0 }}
             whileInView={{ scale: 1, opacity: 1 }}
             viewport={{ once: true, amount: 0.2 }}
@@ -51,7 +51,7 @@ const Training = () => {
           </motion.div>
 
           <motion.div
-            className="absolute md:w-[125px] md:h-[125px] w-[65px] h-[65px] -bottom-6 md:-bottom-8 -left-2 md:-left-[29px]"
+            className="absolute md:w-[125px] md:h-[125px] w-[65px] h-[65px] -bottom-5 md:-bottom-8 -left-2 md:-left-[29px]"
             initial={{ scale: 0.8, opacity: 0 }}
             whileInView={{ scale: 1, opacity: 1 }}
             viewport={{ once: true, amount: 0.2 }}
