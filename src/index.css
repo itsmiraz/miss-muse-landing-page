@@ -250,7 +250,20 @@ body {
 
 
 
+@keyframes slideIn {
+  from {
+    transform: scale(0.9) translateX(50px) translateY(50px);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1) translateX(0) translateY(0);
+    opacity: 1;
+  }
+}
 
+.slide-in {
+  animation: slideIn 0.4s ease-in-out;
+}
 
 
 
