@@ -3,9 +3,10 @@ import DashedLine from "../../assets/icons/DashedLine.svg";
 import Step1 from "../../assets/icons/Step1.svg";
 import Step2 from "../../assets/icons/Step2.svg";
 import Step3 from "../../assets/icons/Step3.svg";
-import LargeCheckicon from '../../assets/icons/LargeCheckIcon.svg'
-import SmCheckicon from '../../assets/icons/SmCheckIcon.svg'
+import LargeCheckicon from "../../assets/icons/LargeCheckIcon.svg";
+import SmCheckicon from "../../assets/icons/SmCheckIcon.svg";
 import { motion } from "framer-motion";
+import { } from "react";
 
 const Training = () => {
   return (
@@ -20,10 +21,10 @@ const Training = () => {
             {/* Dashed Line Animation */}
             <motion.div
               className="overflow-hidden  flex justify-center items-start h-full"
-              initial={{ height: 0 }} 
-              whileInView={{ height: '100%' }} 
-              viewport={{ once: true, amount: 0.5 }} 
-              transition={{ duration: 2 }} 
+              initial={{ height: 0 }}
+              whileInView={{ height: "100%" }}
+              viewport={{ once: true, amount: 0.5 }}
+              transition={{ duration: 2 }}
             >
               <DashedLine />
             </motion.div>
@@ -62,18 +63,21 @@ const Training = () => {
           </motion.div>
         </div>
 
+     
         <div className="pb-[151px] items-center space-y-[42px] md:space-y-[60px]">
           {Training_steps.map((item, i) => (
             <motion.div
-              className="flex flex-col justify-center items-center gap-[13px] md:gap-5"
+              className="flex flex-col justify-center items-center gap-[13px] md:gap-5 text-animation"
               key={i}
-              initial={{ scale: 0.8, x: 100, y: 100, opacity: 0 }}
-              whileInView={{ scale: 1, x: 0, y: 0, opacity: 1 }}
-              viewport={{ once: true, amount: 0.2 }}
-              transition={{ duration: 0.4, delay: i * 0.2 }}
-              style={{ willChange: "transform, opacity" }} // Optimized for performance
+              viewport={{ once: true, amount: 0.2 }} // Key for each step
+              initial={{scale: 0.8, x: 100, y: 100, opacity: 0 }}
+              whileInView={{ scale: 1, x: 0, y: 0, opacity: 1}}
+              transition={{
+                duration: 0.5,
+                delay: i * 0.2,
+                ease: "easeInOut",
+              }}
             >
-              {/* Header */}
               <div
                 style={{
                   background: `linear-gradient(to right, ${item.header.bg_gradient.color1}, ${item.header.bg_gradient.color2})`,
@@ -89,7 +93,6 @@ const Training = () => {
                 </p>
               </div>
 
-              {/* Description */}
               <div
                 className="p-[2px] rounded-[11px] md:rounded-[20px] w-full md:w-[557px] overflow-hidden"
                 style={{
@@ -105,10 +108,10 @@ const Training = () => {
                   {item.desc.steps.map((step, i) => (
                     <div className="flex gap-x-3 items-center" key={i}>
                       <div className="md:block hidden">
-                       <LargeCheckicon/>
+                        <LargeCheckicon />
                       </div>
                       <div className="block md:hidden">
-                       <SmCheckicon/>
+                        <SmCheckicon />
                       </div>
                       <div
                         className="text-[11px] md:text-[20px] font-bold"

@@ -1,4 +1,4 @@
-import { motion } from "framer-motion";
+// import { motion } from "framer-motion";
 import About from "./components/home/about";
 import Expertise from "./components/home/expertise";
 import Hero from "./components/home/hero";
@@ -26,35 +26,43 @@ function App() {
         <About />
         <Footer />
       </div>
-      <div
+      {/* <div
         className="fixed w-[380px] md:w-[1400px] mx-auto h-[600px] md:h-[1000px] z-10 inset-0 flex items-center justify-center   opacity-25"
       >
         
        <motion.div
        className="md:block hidden"
       
-        animate={{ rotate: 360 }}  // Rotate 360 degrees
+        animate={{ rotate: 360 }}  
         transition={{
-          repeat: Infinity,       // Repeat the animation infinitely
-          ease: "linear",         // Use a linear easing function for constant speed
-          duration: 18,           // Set the duration of one full rotation
+          repeat: Infinity,    
+          ease: "linear",         
+          duration: 18,         
         }}>
        <img src={MergedGlows} className="w-[1402px]" alt="" />
        </motion.div>
        <motion.div
        className="md:hidden block"
       
-        animate={{ rotate: 360 }}  // Rotate 360 degrees
+        animate={{ rotate: 360 }}  
         transition={{
-          repeat: Infinity,       // Repeat the animation infinitely
-          ease: "linear",         // Use a linear easing function for constant speed
-          duration: 15,           // Set the duration of one full rotation
+          repeat: Infinity,   
+          ease: "linear",     
+          duration: 15,        
         }}
         >
        <img src={MergedGlowsSM} className="w-[500px]" alt="" />
        </motion.div>
       </div>
-    
+     */}
+      <div className="fixed w-[380px] md:w-[1400px] mx-auto h-[600px] md:h-[1000px] z-10 inset-0 flex items-center justify-center opacity-25">
+        <div className="hidden md:block rotate-animation">
+          <img src={MergedGlows} className="w-[1402px]" alt="Rotating Glow" />
+        </div>
+        <div className="block md:hidden rotate-animation">
+          <img src={MergedGlowsSM} className="w-[500px]" alt="Rotating Glow" />
+        </div>
+      </div>
     </main>
   );
 }

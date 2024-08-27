@@ -224,6 +224,37 @@ body {
 
 
 
+
+
+
+.rotate-animation {
+  animation: rotate360 18s linear infinite;
+}
+
+@keyframes rotate360 {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@media (max-width: 768px) {
+  .rotate-animation {
+    animation-duration: 15s; /* Adjust for mobile if needed */
+  }
+}
+
+
+
+
+
+
+
+
+
+
 /* Rainbox glowing border */
 .rainbow-border {
   position: relative;
