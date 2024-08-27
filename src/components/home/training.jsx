@@ -69,11 +69,11 @@ const Training = () => {
             <motion.div
               className="flex flex-col justify-center items-center gap-[13px] md:gap-5 text-animation"
               key={i}
-              viewport={{ once: true, amount: 0.2 }} // Key for each step
-              initial={{scale: 0.8, x: 100, y: 100, opacity: 0 }}
-              whileInView={{ scale: 1, x: 0, y: 0, opacity: 1}}
+              viewport={{ once: true, amount: 0.2 }}
+              initial={{ scale: 0.9, x: 50, y: 50, opacity: 0 }}
+              whileInView={{ scale: 1, x: 0, y: 0, opacity: 1 }}
               transition={{
-                duration: 0.5,
+                duration: 0.4,
                 delay: i * 0.2,
                 ease: "easeInOut",
               }}
