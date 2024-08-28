@@ -5,24 +5,32 @@ import Step2 from "../../assets/icons/Step2.svg";
 import Step3 from "../../assets/icons/Step3.svg";
 import LargeCheckicon from "../../assets/icons/LargeCheckIcon.svg";
 import SmCheckicon from "../../assets/icons/SmCheckIcon.svg";
-import { slideAnimation } from "@/lib/motion";
 import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
-import { useEffect, useState } from "react";
+import { useEffect,  } from "react";
 const Training = () => {
   const [sectionRef, inView] = useInView({
     triggerOnce: true, // Trigger animation once when it enters the viewport
     threshold: 0.2, // Adjust this threshold as needed
   });
 
-  // State to control whether animations should play
-  const [animate, setAnimate] = useState(false);
+  // // State to control whether animations should play
+  // const [animate, setAnimate] = useState(false);
 
   useEffect(() => {
     if (inView) {
-      setAnimate(true);
+      const elements = document.querySelectorAll(".staggered-slide");
+
+    elements.forEach((element, index) => {
+      setTimeout(() => {
+        element.classList.add("staggered-slide-in");
+      }, index * 200); // Adjust the delay for staggered effect
+    });
     }
   }, [inView]);
+
+  
+
   return (
     <div id="progress" className="relative ">
       <h2 className="text-[24px] md:text-[49px] z-30 relative font-bold text-center pt-[37px]">
@@ -77,19 +85,12 @@ const Training = () => {
           </motion.div>
         </div>
 
-        <div
-          ref={sectionRef}
-          className="pb-[151px] items-center space-y-[42px] md:space-y-[60px]"
-        >
+        {/* Steps Part  */}
+        <div ref={sectionRef} className="pb-[151px] items-center space-y-[42px] md:space-y-[60px]">
           {Training_steps.map((item, i) => (
-            <motion.div
-              className="flex flex-col justify-center items-center gap-[13px] md:gap-5 text-animation"
+            <div
+              className="flex flex-col justify-center items-center gap-[13px] md:gap-5 staggered-slide"
               key={i}
-              initial="initial"
-              animate={animate ? "animate" : "initial"}
-              exit="exit"
-              variants={slideAnimation("right", i)}
-              style={{ willChange: "transform, opacity" }}
             >
               <div
                 style={{
@@ -134,7 +135,7 @@ const Training = () => {
                   ))}
                 </div>
               </div>
-            </motion.div>
+            </div>
           ))}
         </div>
       </div>
