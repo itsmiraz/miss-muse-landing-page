@@ -53,9 +53,9 @@ const Hero = () => {
             Training
           </motion.span>
         </h1>
-        <h2 className="text-[20px] md:text-[44px] pb-5 md:pb-10 pt-1 md:pt-4 text-center  leading-[25px] md:leading-[55px]">
+        <h2 style={{wordSpacing:"5px"}} className="text-[20px] md:text-[44px] pb-5 md:pb-10 pt-1 md:pt-4 text-center  leading-[25px] md:leading-[55px]">
           Devenez technicienne de cils <br className="" /> certifiée{" "}
-          <span className="font-bold"> en 3 jours !</span>
+          <span style={{wordSpacing:"0px"}} className="font-bold"> en 3 jours !</span>
         </h2>
         <div className="bg-gradient-to-r to-[#8F77EA] from-[#666666] p-[1px] rounded-full">
           <a href="#startNow">
