@@ -52,7 +52,7 @@ const Training = () => {
             </motion.div>
           </div>
           <motion.div
-            className="absolute md:w-[125px] md:h-[125px] w-[65px] h-[65px] -top-4 md:-top-10 -left-2 md:-left-[29px]"
+            className="absolute md:w-[125px] md:h-[125px] w-[65px] h-[65px] -top-4 md:-top-10 -left-[10px] md:-left-[29px]"
             initial={{ scale: 0.8, opacity: 0 }}
             whileInView={{ scale: 1, opacity: 1 }}
             viewport={{ once: true, amount: 0.2 }}
@@ -63,7 +63,7 @@ const Training = () => {
           </motion.div>
 
           <motion.div
-            className="absolute md:w-[125px] md:h-[125px] w-[65px] h-[65px] top-[17rem] md:top-[27.5rem] -left-2 md:-left-[29px]"
+            className="absolute md:w-[125px] md:h-[125px] w-[65px] h-[65px] top-[17rem] md:top-[27.5rem] -left-[10px] md:-left-[29px]"
             initial={{ scale: 0.8, opacity: 0 }}
             whileInView={{ scale: 1, opacity: 1 }}
             viewport={{ once: true, amount: 0.2 }}
@@ -74,7 +74,7 @@ const Training = () => {
           </motion.div>
 
           <motion.div
-            className="absolute md:w-[125px] md:h-[125px] w-[65px] h-[65px] -bottom-5 md:-bottom-8 -left-2 md:-left-[29px]"
+            className="absolute md:w-[125px] md:h-[125px] w-[65px] h-[65px] -bottom-4 md:-bottom-8 -left-[10px] md:-left-[29px]"
             initial={{ scale: 0.8, opacity: 0 }}
             whileInView={{ scale: 1, opacity: 1 }}
             viewport={{ once: true, amount: 0.2 }}
@@ -86,7 +86,7 @@ const Training = () => {
         </div>
 
         {/* Steps Part  */}
-        <div ref={sectionRef} className="pb-[151px] items-center space-y-[42px] md:space-y-[60px]">
+        <div ref={sectionRef} className="pb-[100px] md:pb-[151px] items-center space-y-[42px] md:space-y-[60px]">
           {Training_steps.map((item, i) => (
             <div
               className="flex flex-col justify-center items-center gap-[13px] md:gap-5 staggered-slide"

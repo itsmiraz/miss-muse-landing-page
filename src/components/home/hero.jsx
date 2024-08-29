@@ -1,10 +1,8 @@
 import LgLogo from "../../assets/icons/MissMuseHeroLogo.svg";
 import SmLogo from "../../assets/icons/MissMuseSmlogo.svg";
-import {motion } from "framer-motion";
+import { motion } from "framer-motion";
 
 const Hero = () => {
- 
-
   return (
     <div
       id="hero"
@@ -55,15 +53,15 @@ const Hero = () => {
             Training
           </motion.span>
         </h1>
-        <h2 className="text-[20px] md:text-[44px] pb-5 md:pb-10 pt-1 md:pt-4 text-center leading-[25px] md:leading-[55px]">
+        <h2 className="text-[20px] md:text-[44px] pb-5 md:pb-10 pt-1 md:pt-4 text-center  leading-[25px] md:leading-[55px]">
           Devenez technicienne de cils <br className="" /> certifiée{" "}
-          <span className="font-bold">en 3 jours !</span>
+          <span className="font-bold"> en 3 jours !</span>
         </h2>
         <div className="bg-gradient-to-r to-[#8F77EA] from-[#666666] p-[1px] rounded-full">
           <a href="#startNow">
-          <button className="px-[26px] md:px-10 py-2 md:py-4 text-[13px] md:text-[28px] rounded-full font-bold bg-gradient-to-r from-[#F948AE] to-[#4320EF]">
-            Commencez Maintenant!
-          </button>
+            <button className="px-[26px] md:px-10 py-2 md:py-4 text-[13px] md:text-[28px] rounded-full font-bold bg-gradient-to-r from-[#F948AE] to-[#4320EF]">
+              Commencez Maintenant!
+            </button>
           </a>
         </div>
       </div>

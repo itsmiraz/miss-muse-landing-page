@@ -228,7 +228,7 @@ body {
 
 
 .rotate-animation {
-  animation: rotate360 18s linear infinite;
+  animation: rotate360 13s linear infinite;
 }
 
 @keyframes rotate360 {

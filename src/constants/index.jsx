@@ -97,7 +97,7 @@ export const Training_steps = [
   {
     header: {
       icon: <BookIcon />,
-      head_title: "théorie",
+      head_title: "Théorie",
       bg_gradient: {
         color1: "#2787F1",
         color2: "#A881FF",
@@ -126,7 +126,7 @@ export const Training_steps = [
   {
     header: {
       icon: <PlainEye />,
-      head_title: "exercice",
+      head_title: "Exercice",
       bg_gradient: {
         color1: "#E51F96",
         color2: "#851B8E",
