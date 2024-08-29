@@ -86,10 +86,62 @@ const Training = () => {
         </div>
 
         {/* Steps Part  */}
-        <div ref={sectionRef} className="pb-[100px] md:pb-[151px] items-center space-y-[42px] md:space-y-[60px]">
+        <div ref={sectionRef} className="md:block hidden pb-[100px] md:pb-[151px] items-center space-y-[42px] md:space-y-[60px]">
           {Training_steps.map((item, i) => (
             <div
               className="flex flex-col justify-center items-center gap-[13px] md:gap-5 staggered-slide"
+              key={i}
+            >
+              <div
+                style={{
+                  background: `linear-gradient(to right, ${item.header.bg_gradient.color1}, ${item.header.bg_gradient.color2})`,
+                }}
+                className="flex rounded-[10px] md:rounded-[20px] md:items-center gap-x-2.5 w-full md:w-[302px] py-2.5 md:py-4 px-[20px] whitespace-nowrap justify-start md:justify-center"
+              >
+                <div className="w-[23px] h-[23px] md:w-[41px] md:h-[41px]">
+                  {item.header.icon}
+                </div>
+                <p className="text-[16px] md:text-[28px] font-bold">
+                  Jour {i + 1} :{" "}
+                  <span className="font-normal">{item.header.head_title}</span>
+                </p>
+              </div>
+
+              <div
+                className="p-[2px] rounded-[11px] md:rounded-[20px] w-full md:w-[557px] overflow-hidden"
+                style={{
+                  background: `linear-gradient(to right, ${item.desc.border_gradient.color1}, ${item.desc.border_gradient.color2}, ${item.desc.border_gradient.color3})`,
+                }}
+              >
+                <div
+                  style={{
+                    background: `linear-gradient(to right, ${item.desc.bg_gradient.color1}, ${item.desc.bg_gradient.color2})`,
+                  }}
+                  className="py-[18px] overflow-hidden rounded-[11px] md:rounded-[20px] w-full px-[20px] space-y-2 md:space-y-4"
+                >
+                  {item.desc.steps.map((step, i) => (
+                    <div className="flex gap-x-3 items-center" key={i}>
+                      <div className="md:block hidden">
+                        <LargeCheckicon />
+                      </div>
+                      <div className="block md:hidden">
+                        <SmCheckicon />
+                      </div>
+                      <div
+                        className="text-[11px] md:text-[20px] font-bold"
+                        dangerouslySetInnerHTML={{ __html: step }}
+                      />
+                    </div>
+                  ))}
+                </div>
+              </div>
+            </div>
+          ))}
+        </div>
+        <div className="block md:hidden pb-[100px] md:pb-[151px] items-center space-y-[42px] md:space-y-[60px]">
+          {Training_steps.map((item, i) => (
+            <div
+              className="flex flex-col justify-center items-center gap-[13px] md:gap-5 "
               key={i}
             >
               <div
