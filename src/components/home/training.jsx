@@ -1,13 +1,17 @@
 import { Training_steps } from "../../constants";
 import DashedLine from "../../assets/icons/DashedLine.svg";
+import DashedLineMobile from "../../assets/icons/DashlineMobile.svg";
 import Step1 from "../../assets/icons/Step1.svg";
+import Step1Md from "../../assets/icons/Step1Mobile.svg";
 import Step2 from "../../assets/icons/Step2.svg";
+import Step2MD from "../../assets/icons/Step2Mobile.svg";
+import Step3MD from "../../assets/icons/Step3Moible.svg";
 import Step3 from "../../assets/icons/Step3.svg";
 import LargeCheckicon from "../../assets/icons/LargeCheckIcon.svg";
 import SmCheckicon from "../../assets/icons/SmCheckIcon.svg";
 import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
-import { useEffect,  } from "react";
+import { useEffect } from "react";
 const Training = () => {
   const [sectionRef, inView] = useInView({
     triggerOnce: true, // Trigger animation once when it enters the viewport
@@ -21,28 +25,27 @@ const Training = () => {
     if (inView) {
       const elements = document.querySelectorAll(".staggered-slide");
 
-    elements.forEach((element, index) => {
-      setTimeout(() => {
-        element.classList.add("staggered-slide-in");
-      }, index * 200); // Adjust the delay for staggered effect
-    });
+      elements.forEach((element, index) => {
+        setTimeout(() => {
+          element.classList.add("staggered-slide-in");
+        }, index * 200); // Adjust the delay for staggered effect
+      });
     }
   }, [inView]);
-
-  
 
   return (
     <div id="progress" className="relative ">
       <h2 className="text-[24px] md:text-[49px] z-30 relative font-bold text-center pt-[37px]">
         Déroulement du training
       </h2>
-      <div className="flex px-6 mt-[62px] md:-translate-x-20 relative z-30 items-start md:items-start justify-center gap-x-[14px] md:gap-x-[110px]">
+      <div className=" md:flex hidden px-6 mt-[62px] md:-translate-x-20 relative z-30 items-start md:items-start justify-center gap-x-[14px] md:gap-x-[110px]">
         {/* This is the Line i wanted the animation here */}
+
         <div className="mt-2 md:mt-6 relative w-[65px]">
           <div className="h-[600px] flex justify-center items-start md:h-[960px] overflow-hidden">
             {/* Dashed Line Animation */}
             <motion.div
-              className="overflow-hidden  flex justify-center items-start h-full"
+              className="overflow-hidden flex justify-center items-start h-full"
               initial={{ height: 0 }}
               whileInView={{ height: "100%" }}
               viewport={{ once: true, amount: 0.5 }}
@@ -51,6 +54,7 @@ const Training = () => {
               <DashedLine />
             </motion.div>
           </div>
+
           <motion.div
             className="absolute md:w-[125px] md:h-[125px] w-[65px] h-[65px] -top-4 md:-top-10 -left-[10px] md:-left-[29px]"
             initial={{ scale: 0.8, opacity: 0 }}
@@ -86,7 +90,10 @@ const Training = () => {
         </div>
 
         {/* Steps Part  */}
-        <div ref={sectionRef} className="md:block hidden pb-[100px] md:pb-[151px] items-center space-y-[42px] md:space-y-[60px]">
+        <div
+          ref={sectionRef}
+          className="md:block hidden pb-[100px] md:pb-[151px] items-center space-y-[42px] md:space-y-[60px]"
+        >
           {Training_steps.map((item, i) => (
             <div
               className="flex flex-col justify-center items-center gap-[13px] md:gap-5 staggered-slide"
@@ -124,9 +131,7 @@ const Training = () => {
                       <div className="md:block hidden">
                         <LargeCheckicon />
                       </div>
-                      <div className="block md:hidden">
-                        <SmCheckicon />
-                      </div>
+
                       <div
                         className="text-[11px] md:text-[20px] font-bold"
                         dangerouslySetInnerHTML={{ __html: step }}
@@ -138,6 +143,45 @@ const Training = () => {
             </div>
           ))}
         </div>
+      </div>
+      <div className=" flex md:hidden px-6 mt-[62px] md:-translate-x-20 relative z-30 items-start md:items-start justify-center gap-x-[14px] md:gap-x-[110px]">
+        {/* This is the Line i wanted the animation here */}
+
+        <div className="mt-2 md:mt-6 relative w-[65px]">
+          <div className="h-[600px] flex justify-center items-start md:h-[960px] overflow-hidden">
+            {/* Dashed Line Animation */}
+            <motion.div className="overflow-hidden flex justify-center items-start h-full">
+              <DashedLineMobile />
+            </motion.div>
+          </div>
+
+          <div className="absolute md:w-[125px] md:h-[125px] w-[65px] h-[65px] -top-4 md:-top-10 -left-[10px] md:-left-[29px]">
+            <Step1Md />
+          </div>
+
+          <motion.div
+            className="absolute md:w-[125px] md:h-[125px] w-[65px] h-[65px] top-[17rem] md:top-[27.5rem] -left-[10px] md:-left-[29px]"
+            initial={{ scale: 0.8, opacity: 0 }}
+            whileInView={{ scale: 1, opacity: 1 }}
+            viewport={{ once: true, amount: 0.2 }}
+            transition={{ duration: 0.4, delay: 0.3 }}
+            style={{ willChange: "transform, opacity" }} // Optimized for performance
+          >
+            <Step2MD />
+          </motion.div>
+
+          <motion.div
+            className="absolute md:w-[125px] md:h-[125px] w-[65px] h-[65px] -bottom-4 md:-bottom-8 -left-[10px] md:-left-[29px]"
+            initial={{ scale: 0.8, opacity: 0 }}
+            whileInView={{ scale: 1, opacity: 1 }}
+            viewport={{ once: true, amount: 0.2 }}
+            transition={{ duration: 0.4, delay: 0.5 }}
+            style={{ willChange: "transform, opacity" }} // Optimized for performance
+          >
+            <Step3MD />
+          </motion.div>
+        </div>
+
         <div className="block md:hidden pb-[100px] md:pb-[151px] items-center space-y-[42px] md:space-y-[60px]">
           {Training_steps.map((item, i) => (
             <div
@@ -173,9 +217,6 @@ const Training = () => {
                 >
                   {item.desc.steps.map((step, i) => (
                     <div className="flex gap-x-3 items-center" key={i}>
-                      <div className="md:block hidden">
-                        <LargeCheckicon />
-                      </div>
                       <div className="block md:hidden">
                         <SmCheckicon />
                       </div>
