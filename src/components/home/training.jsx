@@ -158,19 +158,19 @@ const Training = () => {
             </motion.div>
           </div>
 
-          <div className="absolute md:w-[125px] md:h-[125px] w-[65px] h-[65px] -top-4 md:-top-10 -left-[15px] md:-left-[29px]">
+          <div className="absolute md:w-[125px] md:h-[125px] w-[65px] h-[65px] -top-7 md:-top-10 -left-[15px] md:-left-[29px]">
             <Step1Md />
           </div>
 
           <div
-            className="absolute md:w-[125px] md:h-[125px] w-[65px] h-[65px] top-[17rem] md:top-[27.5rem] -left-[15px] md:-left-[29px]"
+            className="absolute md:w-[125px] md:h-[125px] w-[65px] h-[65px] top-[17rem] md:top-[27.5rem] -left-[10px] md:-left-[29px]"
            
           >
             <Step2MD />
           </div>
 
           <div
-            className="absolute md:w-[125px] md:h-[125px] w-[65px] h-[65px] -bottom-1 md:-bottom-8 -left-[15px] md:-left-[29px]"
+            className="absolute md:w-[125px] md:h-[125px] w-[65px] h-[65px] -bottom-6 md:-bottom-8 -left-[15px] md:-left-[29px]"
            // Optimized for performance
           >
             <Step3MD />
