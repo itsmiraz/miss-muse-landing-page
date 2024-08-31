@@ -38,6 +38,7 @@ const Training = () => {
       <h2 className="text-[24px] md:text-[49px] z-30 relative font-bold text-center pt-[37px]">
         Déroulement du training
       </h2>
+      {/* Desktop */}
       <div className=" md:flex hidden px-6 mt-[62px] md:-translate-x-20 relative z-30 items-start md:items-start justify-center gap-x-[14px] md:gap-x-[110px]">
         {/* This is the Line i wanted the animation here */}
 
@@ -144,6 +145,8 @@ const Training = () => {
           ))}
         </div>
       </div>
+      {/* Mobile */}
+
       <div className=" flex md:hidden px-6 mt-[62px] md:-translate-x-20 relative z-30 items-start md:items-start justify-center gap-x-[14px] md:gap-x-[110px]">
         {/* This is the Line i wanted the animation here */}
 
@@ -155,31 +158,23 @@ const Training = () => {
             </motion.div>
           </div>
 
-          <div className="absolute md:w-[125px] md:h-[125px] w-[65px] h-[65px] -top-4 md:-top-10 -left-[10px] md:-left-[29px]">
+          <div className="absolute md:w-[125px] md:h-[125px] w-[65px] h-[65px] -top-4 md:-top-10 -left-[15px] md:-left-[29px]">
             <Step1Md />
           </div>
 
-          <motion.div
-            className="absolute md:w-[125px] md:h-[125px] w-[65px] h-[65px] top-[17rem] md:top-[27.5rem] -left-[10px] md:-left-[29px]"
-            initial={{ scale: 0.8, opacity: 0 }}
-            whileInView={{ scale: 1, opacity: 1 }}
-            viewport={{ once: true, amount: 0.2 }}
-            transition={{ duration: 0.4, delay: 0.3 }}
-            style={{ willChange: "transform, opacity" }} // Optimized for performance
+          <div
+            className="absolute md:w-[125px] md:h-[125px] w-[65px] h-[65px] top-[17rem] md:top-[27.5rem] -left-[15px] md:-left-[29px]"
+           
           >
             <Step2MD />
-          </motion.div>
+          </div>
 
-          <motion.div
-            className="absolute md:w-[125px] md:h-[125px] w-[65px] h-[65px] -bottom-4 md:-bottom-8 -left-[10px] md:-left-[29px]"
-            initial={{ scale: 0.8, opacity: 0 }}
-            whileInView={{ scale: 1, opacity: 1 }}
-            viewport={{ once: true, amount: 0.2 }}
-            transition={{ duration: 0.4, delay: 0.5 }}
-            style={{ willChange: "transform, opacity" }} // Optimized for performance
+          <div
+            className="absolute md:w-[125px] md:h-[125px] w-[65px] h-[65px] -bottom-1 md:-bottom-8 -left-[15px] md:-left-[29px]"
+           // Optimized for performance
           >
             <Step3MD />
-          </motion.div>
+          </div>
         </div>
 
         <div className="block md:hidden pb-[100px] md:pb-[151px] items-center space-y-[42px] md:space-y-[60px]">
