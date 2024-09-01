@@ -6,6 +6,7 @@ import Step1Md from "../../assets/icons/Step1Mobile.svg";
 import Step2 from "../../assets/icons/Step2.svg";
 import Step2MD from "../../assets/icons/Step2Mobile.svg";
 import Step3MD from "../../assets/icons/Step3Moible.svg";
+import StesWithDashedLine from "../../assets/icons/StepsWithLine.svg";
 import Step3 from "../../assets/icons/Step3.svg";
 import LargeCheckicon from "../../assets/icons/LargeCheckIcon.svg";
 import SmCheckicon from "../../assets/icons/SmCheckIcon.svg";
@@ -147,12 +148,12 @@ const Training = () => {
       </div>
       {/* Mobile */}
 
-      <div className=" flex md:hidden px-6 mt-[62px] md:-translate-x-20 relative z-30 items-start md:items-start justify-center gap-x-[14px] md:gap-x-[110px]">
+      <div className=" flex md:hidden px-4 mt-[62px] md:-translate-x-20 relative z-30 items-start md:items-start justify-center gap-x-[14px] md:gap-x-[110px]">
         {/* This is the Line i wanted the animation here */}
 
-        <div className="mt-2 md:mt-6 relative w-[72px]">
-          <div className="h-[600px] flex justify-center items-start md:h-[960px] overflow-hidden">
-            {/* Dashed Line Animation */}
+        <div className="mt-2 md:mt-6 h-[600px]  relative w-[72px] ">
+       {/* <StesWithDashedLine/> */}
+          <div className="left-6  h-[600px] absolute flex justify-center items-start md:h-[960px] overflow-hidden">
             <motion.div className="overflow-hidden flex justify-center items-start h-full">
               <DashedLineMobile />
             </motion.div>
@@ -171,7 +172,6 @@ const Training = () => {
 
           <div
             className="absolute md:w-[125px] md:h-[125px] w-[65px] h-[65px] -bottom-4 md:-bottom-8 -left-[11px] md:-left-[29px]"
-           // Optimized for performance
           >
             <Step3MD />
           </div>
