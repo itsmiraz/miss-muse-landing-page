@@ -44,7 +44,7 @@ const Training = () => {
         {/* This is the Line i wanted the animation here */}
 
         <div className="mt-2 md:mt-6 relative w-[65px]">
-          <div className="h-[600px] flex justify-center items-start md:h-[960px] overflow-hidden">
+          <div className="h-[620px] flex justify-center items-start md:h-[980px] overflow-hidden">
             {/* Dashed Line Animation */}
             <motion.div
               className="overflow-hidden flex justify-center items-start h-full"
@@ -80,7 +80,7 @@ const Training = () => {
           </motion.div>
 
           <motion.div
-            className="absolute md:w-[125px] md:h-[125px] w-[65px] h-[65px] -bottom-4 md:-bottom-8 -left-[10px] md:-left-[29px]"
+            className="absolute md:w-[125px] md:h-[125px] w-[65px] h-[65px] -bottom-4 md:-bottom-9 -left-[10px] md:-left-[29px]"
             initial={{ scale: 0.8, opacity: 0 }}
             whileInView={{ scale: 1, opacity: 1 }}
             viewport={{ once: true, amount: 0.2 }}
