@@ -146,7 +146,7 @@ export const Training_steps = [
         `Pratique sur modèle réelle  <br/> <span class='font-[400]'>(application d'un set volume léger)</span>`,
         `Discussion des défis courants et 
                 solutions pendant l'application`,
-        `Évaluation et retour détaillé sur la performance`,
+        `Évaluation et retour détaillé sur la <br/> performance`,
         `Conseils personnalisés`,
       ],
     },
