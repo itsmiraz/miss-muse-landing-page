@@ -14,7 +14,7 @@ const Expertise = () => {
           {Expertise_content.map((item, i) => (
             <div
               className={`${
-                i === 1 ? "mt-0 md:mt-[40px]" : ""
+                i === 1 ? "mt-0 lg:mt-[40px]" : ""
               } glow-effect w-[182px] md:w-[400px] flex justify-center items-center h-[116px] md:h-[250px]`}
               key={i}
             >

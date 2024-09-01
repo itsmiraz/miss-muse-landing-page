@@ -11,9 +11,9 @@ const StartNow = () => {
                 Je Veux Commencer <span className="bg-clip-text text-transparent bg-gradient-to-r from-[#FF44C7] to-[#EC7DFF]">Maintenant</span> !
             </h2>
             <p className="text-[16px] md:text-[32px] pt-[22px] md:pt-[56px] leading-[20px] md:leading-[40px] font-bold text-center">Envoyez-moi "<span className="text-[#FF5AB9]">JE SUIS PRÊTE</span>" par texto au <span className="text-[#6F9CFF]">
-                514-378-1226</span>  ou en message <br className='md:block hidden' />
+                514-378-1226</span>  ou en message <br className='lg:block hidden' />
                 privé sur <span className="text-[#FFF23C]">
-                    Instagram</span> pour connaître le prix de ma formation et <br className='md:block hidden' /> commencer votre aventure dès que possible.</p>
+                    Instagram</span> pour connaître le prix de ma formation et <br className='lg:block hidden' /> commencer votre aventure dès que possible.</p>
             <div className="pt-[22px] md:pt-[57px] gap-y-[12px] gap-x-[25px] flex md:flex-row flex-col justify-center items-center">
               <a className='w-full md:w-fit' target='_blank' href='https://www.instagram.com/missmuselashes/'>
               <div className='bg-gradient-to-b from-[#FF0093] to-[#3C0023] border rounded-[9px] justify-center w-full md:w-fit flex items-center gap-x-2 py-[8px] md:py-[15px] px-[23px] border-[#F71B9A]'>

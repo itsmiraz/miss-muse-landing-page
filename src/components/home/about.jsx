@@ -17,7 +17,7 @@ const About = () => {
       </div>
 
       <div className="w-fit -translate-y-6  md:-translate-y-10 grid place-items-center mx-auto bg-gradient-to-l from-[#F71B9A] to-[#FFB4DF] p-[1px] rounded-[24px]">
-        <div className="bg-gradient-to-b from-[#190B14] to-[#080909]  backdrop-blur-lg w-full rounded-[24px] py-[40px] md:py-[87px] px-5 md:px-[182px] space-y-[43px]">
+        <div className="bg-gradient-to-b from-[#190B14] to-[#080909]  backdrop-blur-lg w-full rounded-[24px] py-[40px] md:py-[87px] px-5 md:px-[50px] lg:px-[182px] space-y-[43px]">
           <p className="text-[16px]  md:text-[29px] text-center">
             Salut! Je suis
             <span className="text-[#F71B9A] font-bold"> Salma Bensouda</span>,

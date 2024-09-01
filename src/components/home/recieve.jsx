@@ -9,7 +9,7 @@ const Receive = () => {
             Ce que vous recevrez
           </h2>
 
-          <div className="grid px-[24px] md:px-[66px] place-items-center mt-[50px] grid-cols-1 md:grid-cols-2 gap-10">
+          <div className="grid px-[24px] md:px-[66px] place-items-center mt-[50px] grid-cols-1  md:grid-cols-1 lg:grid-cols-2 gap-10">
             {Receive_Section_data.map((item, i) => (
               <div
                 className="flex md:flex-row flex-col max-w-[549px] justify-center md:justify-start items-center md:items-center gap-2 md:gap-8"

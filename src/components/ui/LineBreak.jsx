@@ -1,7 +1,7 @@
 
 const LineBreak = () => {
   return (
-    <br className="md:block hidden" />
+    <br className="lg:block hidden" />
   )
 }
 

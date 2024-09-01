@@ -6,7 +6,6 @@ import Step1Md from "../../assets/icons/Step1Mobile.svg";
 import Step2 from "../../assets/icons/Step2.svg";
 import Step2MD from "../../assets/icons/Step2Mobile.svg";
 import Step3MD from "../../assets/icons/Step3Moible.svg";
-import StesWithDashedLine from "../../assets/icons/StepsWithLine.svg";
 import Step3 from "../../assets/icons/Step3.svg";
 import LargeCheckicon from "../../assets/icons/LargeCheckIcon.svg";
 import SmCheckicon from "../../assets/icons/SmCheckIcon.svg";
@@ -15,12 +14,9 @@ import { useInView } from "react-intersection-observer";
 import { useEffect } from "react";
 const Training = () => {
   const [sectionRef, inView] = useInView({
-    triggerOnce: true, // Trigger animation once when it enters the viewport
-    threshold: 0.2, // Adjust this threshold as needed
+    triggerOnce: true,
+    threshold: 0.2, 
   });
-
-  // // State to control whether animations should play
-  // const [animate, setAnimate] = useState(false);
 
   useEffect(() => {
     if (inView) {
@@ -40,8 +36,7 @@ const Training = () => {
         Déroulement du training
       </h2>
       {/* Desktop */}
-      <div className=" md:flex hidden px-6 mt-[62px] md:-translate-x-20 relative z-30 items-start md:items-start justify-center gap-x-[14px] md:gap-x-[110px]">
-        {/* This is the Line i wanted the animation here */}
+      <div className=" md:flex hidden px-6 mt-[62px] lg:-translate-x-20  md:-translate-x-0 relative z-30 items-start justify-center gap-x-[110px]">
 
         <div className="mt-2 md:mt-6 relative w-[65px]">
           <div className="h-[620px] flex justify-center items-start md:h-[980px] overflow-hidden">
@@ -85,7 +80,6 @@ const Training = () => {
             whileInView={{ scale: 1, opacity: 1 }}
             viewport={{ once: true, amount: 0.2 }}
             transition={{ duration: 0.4, delay: 0.5 }}
-            style={{ willChange: "transform, opacity" }} // Optimized for performance
           >
             <Step3 />
           </motion.div>
@@ -149,10 +143,8 @@ const Training = () => {
       {/* Mobile */}
 
       <div className=" flex md:hidden px-4 mt-[62px] md:-translate-x-20 relative z-30 items-start md:items-start justify-center gap-x-[14px] md:gap-x-[110px]">
-        {/* This is the Line i wanted the animation here */}
 
         <div className="mt-2 md:mt-6 h-[600px]  relative w-[72px] ">
-       {/* <StesWithDashedLine/> */}
           <div className="left-6  h-[600px] absolute flex justify-center items-start md:h-[960px] overflow-hidden">
             <motion.div className="overflow-hidden flex justify-center items-start h-full">
               <DashedLineMobile />
