@@ -150,7 +150,7 @@ const Training = () => {
       <div className=" flex md:hidden px-6 mt-[62px] md:-translate-x-20 relative z-30 items-start md:items-start justify-center gap-x-[14px] md:gap-x-[110px]">
         {/* This is the Line i wanted the animation here */}
 
-        <div className="mt-2 md:mt-6 relative w-[65px]">
+        <div className="mt-2 md:mt-6 relative w-[72px]">
           <div className="h-[600px] flex justify-center items-start md:h-[960px] overflow-hidden">
             {/* Dashed Line Animation */}
             <motion.div className="overflow-hidden flex justify-center items-start h-full">
